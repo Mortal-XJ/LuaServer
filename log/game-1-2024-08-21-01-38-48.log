@@ -1,0 +1,3115 @@
+2024-08-21 01:38:48.832 | 55508     | INFO  | INIT with 16 workers.
+2024-08-21 01:38:48.834 | 65064     | INFO  | WORKER-1 START
+2024-08-21 01:38:48.834 | 61976     | INFO  | WORKER-3 START
+2024-08-21 01:38:48.834 | 65560     | INFO  | WORKER-4 START
+2024-08-21 01:38:48.834 | 41280     | INFO  | WORKER-2 START
+2024-08-21 01:38:48.834 | 63948     | INFO  | WORKER-5 START
+2024-08-21 01:38:48.835 | 56076     | INFO  | WORKER-6 START
+2024-08-21 01:38:48.835 | 62772     | INFO  | WORKER-7 START
+2024-08-21 01:38:48.835 | 65828     | INFO  | WORKER-8 START
+2024-08-21 01:38:48.835 | 58468     | INFO  | WORKER-9 START
+2024-08-21 01:38:48.835 | 22844     | INFO  | WORKER-10 START
+2024-08-21 01:38:48.836 | 4264      | INFO  | WORKER-11 START
+2024-08-21 01:38:48.836 | 54060     | INFO  | WORKER-12 START
+2024-08-21 01:38:48.836 | 38332     | INFO  | WORKER-13 START
+2024-08-21 01:38:48.836 | 50180     | INFO  | WORKER-14 START
+2024-08-21 01:38:48.837 | 65848     | INFO  | WORKER-15 START
+2024-08-21 01:38:48.837 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-21 01:38:48.837 | 66468     | INFO  | WORKER-16 START
+2024-08-21 01:38:48.871 | :01000002 | INFO  | [WORKER 1] new service [db_openid]
+2024-08-21 01:38:48.887 | :01000003 | INFO  | [WORKER 1] new service [db_server]
+2024-08-21 01:38:48.898 | :01000004 | INFO  | [WORKER 1] new service [db_user]
+2024-08-21 01:38:48.911 | :02000001 | INFO  | [WORKER 2] new service [db_game]
+2024-08-21 01:38:48.924 | :02000002 | INFO  | [WORKER 2] new service [auth]
+2024-08-21 01:38:48.929 | :03000001 | INFO  | [WORKER 3] new service [gate]
+2024-08-21 01:38:48.932 | :04000001 | INFO  | [WORKER 4] new service [center]
+2024-08-21 01:38:48.937 | :05000001 | INFO  | [WORKER 5] new service [cluster]
+2024-08-21 01:38:48.940 | :06000001 | INFO  | [WORKER 6] new service [node]
+2024-08-21 01:38:48.945 | :07000001 | INFO  | [WORKER 7] new service [sharetable]
+2024-08-21 01:38:48.947 | :08000001 | INFO  | [WORKER 8] new service [mail]
+2024-08-21 01:38:48.951 | :09000001 | INFO  | [WORKER 9] new service [robot]
+2024-08-21 01:38:49.049 | :05000001 | INFO  | cluster listen 127.0.0.1:9101    (moon/service/cluster.lua:170)
+2024-08-21 01:38:49.049 | :03000001 | INFO  | GAME Server Start Listen    127.0.0.1    12345    (game/gate/Gate.lua:21)
+2024-08-21 01:38:51.980 | :03000001 | INFO  | GAME SERVER: accept     9    127.0.0.1:4573    (game/service_gate.lua:28)
+2024-08-21 01:38:51.980 | :02000002 | INFO  | User Login fd:9 uid:1099780325377 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:51.980 | :0A000001 | INFO  | [WORKER 10] new service [user1099780325377]
+2024-08-21 01:38:51.994 | :03000001 | INFO  | GAME SERVER: accept     11    127.0.0.1:4575    (game/service_gate.lua:28)
+2024-08-21 01:38:51.995 | :02000002 | INFO  | User Login fd:11 uid:1099780325378 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:51.995 | :0B000001 | INFO  | [WORKER 11] new service [user1099780325378]
+2024-08-21 01:38:52.010 | :03000001 | INFO  | GAME SERVER: accept     14    127.0.0.1:4577    (game/service_gate.lua:28)
+2024-08-21 01:38:52.010 | :02000002 | INFO  | User Login fd:14 uid:1099780325379 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.010 | :0C000001 | INFO  | [WORKER 12] new service [user1099780325379]
+2024-08-21 01:38:52.020 | :0A000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.020 | :02000002 | INFO  | login success    1099780325377    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.020 | :03000001 | INFO  | BindUser fd:9 uid:1099780325377 serviceid:0A000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.020 | :03000001 | DEBUG | SendTo 1099780325377 Message:S2CLogin size 13 
+{
+  "time": 1724175532009,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.020 | :03000001 | DEBUG | Recv 1099780325377 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.025 | :03000001 | INFO  | GAME SERVER: accept     18    127.0.0.1:4580    (game/service_gate.lua:28)
+2024-08-21 01:38:52.025 | :02000002 | INFO  | User Login fd:18 uid:1099780325380 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.025 | :0D000001 | INFO  | [WORKER 13] new service [user1099780325380]
+2024-08-21 01:38:52.032 | :0B000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.033 | :02000002 | INFO  | login success    1099780325378    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.033 | :03000001 | INFO  | BindUser fd:11 uid:1099780325378 serviceid:0B000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.033 | :03000001 | DEBUG | SendTo 1099780325378 Message:S2CLogin size 13 
+{
+  "time": 1724175532024,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.033 | :03000001 | DEBUG | Recv 1099780325378 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.040 | :03000001 | INFO  | GAME SERVER: accept     21    127.0.0.1:4582    (game/service_gate.lua:28)
+2024-08-21 01:38:52.040 | :02000002 | INFO  | User Login fd:21 uid:1099780325381 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.040 | :0E000001 | INFO  | [WORKER 14] new service [user1099780325381]
+2024-08-21 01:38:52.041 | :08000001 | INFO  | load user mail    1099780325377    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.041 | :03000001 | DEBUG | SendTo 1099780325377 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.041 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.041 | :03000001 | DEBUG | Recv 1099780325377 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.041 | :03000001 | DEBUG | SendTo 1099780325377 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.046 | :0C000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.046 | :02000002 | INFO  | login success    1099780325379    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.046 | :03000001 | INFO  | BindUser fd:14 uid:1099780325379 serviceid:0C000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.046 | :03000001 | DEBUG | SendTo 1099780325379 Message:S2CLogin size 13 
+{
+  "time": 1724175532039,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.046 | :03000001 | DEBUG | Recv 1099780325379 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.052 | :08000001 | INFO  | load user mail    1099780325378    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.052 | :03000001 | DEBUG | SendTo 1099780325378 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.052 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.052 | :03000001 | DEBUG | Recv 1099780325378 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.052 | :03000001 | DEBUG | SendTo 1099780325378 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.054 | :0E000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.054 | :02000002 | INFO  | login success    1099780325381    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.054 | :03000001 | INFO  | BindUser fd:21 uid:1099780325381 serviceid:0E000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.054 | :03000001 | DEBUG | SendTo 1099780325381 Message:S2CLogin size 13 
+{
+  "time": 1724175532039,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.054 | :03000001 | DEBUG | Recv 1099780325381 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.055 | :03000001 | INFO  | GAME SERVER: accept     24    127.0.0.1:4583    (game/service_gate.lua:28)
+2024-08-21 01:38:52.055 | :02000002 | INFO  | User Login fd:24 uid:1099780325382 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.055 | :0F000001 | INFO  | [WORKER 15] new service [user1099780325382]
+2024-08-21 01:38:52.061 | :08000001 | INFO  | load user mail    1099780325379    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.061 | :03000001 | DEBUG | SendTo 1099780325379 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.062 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.062 | :03000001 | DEBUG | Recv 1099780325379 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.062 | :03000001 | DEBUG | SendTo 1099780325379 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.063 | :0D000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.063 | :02000002 | INFO  | login success    1099780325380    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.064 | :03000001 | INFO  | BindUser fd:18 uid:1099780325380 serviceid:0D000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.064 | :03000001 | DEBUG | SendTo 1099780325380 Message:S2CLogin size 13 
+{
+  "time": 1724175532054,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.064 | :03000001 | DEBUG | Recv 1099780325380 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.069 | :0F000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.069 | :02000002 | INFO  | login success    1099780325382    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.069 | :03000001 | INFO  | BindUser fd:24 uid:1099780325382 serviceid:0F000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.069 | :03000001 | DEBUG | SendTo 1099780325382 Message:S2CLogin size 13 
+{
+  "time": 1724175532054,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.069 | :03000001 | DEBUG | Recv 1099780325382 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.070 | :03000001 | INFO  | GAME SERVER: accept     26    127.0.0.1:4584    (game/service_gate.lua:28)
+2024-08-21 01:38:52.070 | :02000002 | INFO  | User Login fd:26 uid:1099780325383 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.070 | :10000001 | INFO  | [WORKER 16] new service [user1099780325383]
+2024-08-21 01:38:52.075 | :08000001 | INFO  | load user mail    1099780325381    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.075 | :03000001 | DEBUG | SendTo 1099780325381 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.075 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.076 | :03000001 | DEBUG | Recv 1099780325381 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.076 | :03000001 | DEBUG | SendTo 1099780325381 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.084 | :08000001 | INFO  | load user mail    1099780325380    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.084 | :03000001 | DEBUG | SendTo 1099780325380 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.085 | :10000001 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.085 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.085 | :02000002 | INFO  | login success    1099780325383    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.085 | :03000001 | INFO  | BindUser fd:26 uid:1099780325383 serviceid:10000001    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.085 | :03000001 | DEBUG | SendTo 1099780325383 Message:S2CLogin size 13 
+{
+  "time": 1724175532069,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.085 | :03000001 | DEBUG | Recv 1099780325380 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.085 | :03000001 | DEBUG | Recv 1099780325383 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.085 | :03000001 | DEBUG | SendTo 1099780325380 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.085 | :03000001 | INFO  | GAME SERVER: accept     27    127.0.0.1:4585    (game/service_gate.lua:28)
+2024-08-21 01:38:52.085 | :02000002 | INFO  | User Login fd:27 uid:1099780325384 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.085 | :09000002 | INFO  | [WORKER 9] new service [user1099780325384]
+2024-08-21 01:38:52.093 | :08000001 | INFO  | load user mail    1099780325382    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.094 | :03000001 | DEBUG | SendTo 1099780325382 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.094 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.094 | :03000001 | DEBUG | Recv 1099780325382 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.094 | :03000001 | DEBUG | SendTo 1099780325382 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.098 | :09000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.098 | :02000002 | INFO  | login success    1099780325384    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.098 | :03000001 | INFO  | BindUser fd:27 uid:1099780325384 serviceid:09000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.098 | :03000001 | DEBUG | SendTo 1099780325384 Message:S2CLogin size 13 
+{
+  "time": 1724175532085,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.098 | :03000001 | DEBUG | Recv 1099780325384 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.101 | :03000001 | INFO  | GAME SERVER: accept     30    127.0.0.1:4586    (game/service_gate.lua:28)
+2024-08-21 01:38:52.101 | :02000002 | INFO  | User Login fd:30 uid:1099780325385 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.101 | :0A000002 | INFO  | [WORKER 10] new service [user1099780325385]
+2024-08-21 01:38:52.103 | :08000001 | INFO  | load user mail    1099780325383    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.103 | :03000001 | DEBUG | SendTo 1099780325383 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.103 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.103 | :03000001 | DEBUG | Recv 1099780325383 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.103 | :03000001 | DEBUG | SendTo 1099780325383 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.112 | :08000001 | INFO  | load user mail    1099780325384    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.112 | :03000001 | DEBUG | SendTo 1099780325384 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.112 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.112 | :03000001 | DEBUG | Recv 1099780325384 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.112 | :03000001 | DEBUG | SendTo 1099780325384 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.114 | :0A000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.114 | :02000002 | INFO  | login success    1099780325385    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.114 | :03000001 | INFO  | BindUser fd:30 uid:1099780325385 serviceid:0A000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.114 | :03000001 | DEBUG | SendTo 1099780325385 Message:S2CLogin size 13 
+{
+  "time": 1724175532100,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.114 | :03000001 | DEBUG | Recv 1099780325385 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.116 | :03000001 | INFO  | GAME SERVER: accept     32    127.0.0.1:4587    (game/service_gate.lua:28)
+2024-08-21 01:38:52.116 | :02000002 | INFO  | User Login fd:32 uid:1099780325386 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.116 | :0B000002 | INFO  | [WORKER 11] new service [user1099780325386]
+2024-08-21 01:38:52.123 | :08000001 | INFO  | load user mail    1099780325385    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.123 | :03000001 | DEBUG | SendTo 1099780325385 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.123 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.123 | :03000001 | DEBUG | Recv 1099780325385 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.123 | :03000001 | DEBUG | SendTo 1099780325385 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.129 | :0B000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.129 | :02000002 | INFO  | login success    1099780325386    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.129 | :03000001 | INFO  | BindUser fd:32 uid:1099780325386 serviceid:0B000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.129 | :03000001 | DEBUG | SendTo 1099780325386 Message:S2CLogin size 13 
+{
+  "time": 1724175532115,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.130 | :03000001 | DEBUG | Recv 1099780325386 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.132 | :03000001 | INFO  | GAME SERVER: accept     34    127.0.0.1:4588    (game/service_gate.lua:28)
+2024-08-21 01:38:52.132 | :02000002 | INFO  | User Login fd:34 uid:1099780325387 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.132 | :0C000002 | INFO  | [WORKER 12] new service [user1099780325387]
+2024-08-21 01:38:52.139 | :08000001 | INFO  | load user mail    1099780325386    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.139 | :03000001 | DEBUG | SendTo 1099780325386 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.139 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.139 | :03000001 | DEBUG | Recv 1099780325386 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.139 | :03000001 | DEBUG | SendTo 1099780325386 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.146 | :0C000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.146 | :02000002 | INFO  | login success    1099780325387    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.146 | :03000001 | INFO  | BindUser fd:34 uid:1099780325387 serviceid:0C000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.146 | :03000001 | DEBUG | SendTo 1099780325387 Message:S2CLogin size 13 
+{
+  "time": 1724175532131,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.146 | :03000001 | DEBUG | Recv 1099780325387 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.148 | :03000001 | INFO  | GAME SERVER: accept     36    127.0.0.1:4589    (game/service_gate.lua:28)
+2024-08-21 01:38:52.148 | :02000002 | INFO  | User Login fd:36 uid:1099780325388 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.148 | :0D000002 | INFO  | [WORKER 13] new service [user1099780325388]
+2024-08-21 01:38:52.156 | :08000001 | INFO  | load user mail    1099780325387    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.156 | :03000001 | DEBUG | SendTo 1099780325387 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.156 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.156 | :03000001 | DEBUG | Recv 1099780325387 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.156 | :03000001 | DEBUG | SendTo 1099780325387 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.163 | :03000001 | INFO  | GAME SERVER: accept     38    127.0.0.1:4590    (game/service_gate.lua:28)
+2024-08-21 01:38:52.163 | :02000002 | INFO  | User Login fd:38 uid:1099780325389 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.163 | :0E000002 | INFO  | [WORKER 14] new service [user1099780325389]
+2024-08-21 01:38:52.163 | :0D000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.163 | :02000002 | INFO  | login success    1099780325388    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.164 | :03000001 | INFO  | BindUser fd:36 uid:1099780325388 serviceid:0D000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.164 | :03000001 | DEBUG | SendTo 1099780325388 Message:S2CLogin size 13 
+{
+  "time": 1724175532162,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.164 | :03000001 | DEBUG | Recv 1099780325388 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.175 | :08000001 | INFO  | load user mail    1099780325388    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.175 | :03000001 | DEBUG | SendTo 1099780325388 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.175 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.175 | :03000001 | DEBUG | Recv 1099780325388 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.175 | :03000001 | DEBUG | SendTo 1099780325388 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.178 | :0E000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.178 | :02000002 | INFO  | login success    1099780325389    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.178 | :03000001 | INFO  | BindUser fd:38 uid:1099780325389 serviceid:0E000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.178 | :03000001 | DEBUG | SendTo 1099780325389 Message:S2CLogin size 13 
+{
+  "time": 1724175532177,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.178 | :03000001 | INFO  | GAME SERVER: accept     40    127.0.0.1:4591    (game/service_gate.lua:28)
+2024-08-21 01:38:52.178 | :03000001 | DEBUG | Recv 1099780325389 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.178 | :02000002 | INFO  | User Login fd:40 uid:1099780325390 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.178 | :0F000002 | INFO  | [WORKER 15] new service [user1099780325390]
+2024-08-21 01:38:52.188 | :08000001 | INFO  | load user mail    1099780325389    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.188 | :03000001 | DEBUG | SendTo 1099780325389 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.188 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.188 | :03000001 | DEBUG | Recv 1099780325389 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.188 | :03000001 | DEBUG | SendTo 1099780325389 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.193 | :0F000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.193 | :03000001 | INFO  | GAME SERVER: accept     42    127.0.0.1:4592    (game/service_gate.lua:28)
+2024-08-21 01:38:52.193 | :02000002 | INFO  | login success    1099780325390    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.193 | :03000001 | INFO  | BindUser fd:40 uid:1099780325390 serviceid:0F000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.193 | :03000001 | DEBUG | SendTo 1099780325390 Message:S2CLogin size 13 
+{
+  "time": 1724175532192,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.193 | :02000002 | INFO  | User Login fd:42 uid:1099780325391 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.193 | :03000001 | DEBUG | Recv 1099780325390 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.193 | :10000002 | INFO  | [WORKER 16] new service [user1099780325391]
+2024-08-21 01:38:52.202 | :08000001 | INFO  | load user mail    1099780325390    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.202 | :03000001 | DEBUG | SendTo 1099780325390 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.202 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.202 | :03000001 | DEBUG | Recv 1099780325390 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.203 | :03000001 | DEBUG | SendTo 1099780325390 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.207 | :10000002 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.207 | :02000002 | INFO  | login success    1099780325391    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.207 | :03000001 | INFO  | BindUser fd:42 uid:1099780325391 serviceid:10000002    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.207 | :03000001 | DEBUG | SendTo 1099780325391 Message:S2CLogin size 13 
+{
+  "time": 1724175532192,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.207 | :03000001 | DEBUG | Recv 1099780325391 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.208 | :03000001 | INFO  | GAME SERVER: accept     44    127.0.0.1:4593    (game/service_gate.lua:28)
+2024-08-21 01:38:52.208 | :02000002 | INFO  | User Login fd:44 uid:1099780325392 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.208 | :09000003 | INFO  | [WORKER 9] new service [user1099780325392]
+2024-08-21 01:38:52.214 | :08000001 | INFO  | load user mail    1099780325391    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.214 | :03000001 | DEBUG | SendTo 1099780325391 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.215 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.215 | :03000001 | DEBUG | Recv 1099780325391 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.215 | :03000001 | DEBUG | SendTo 1099780325391 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.224 | :03000001 | INFO  | GAME SERVER: accept     46    127.0.0.1:4594    (game/service_gate.lua:28)
+2024-08-21 01:38:52.224 | :02000002 | INFO  | User Login fd:46 uid:1099780325393 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.224 | :0A000003 | INFO  | [WORKER 10] new service [user1099780325393]
+2024-08-21 01:38:52.224 | :09000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.224 | :02000002 | INFO  | login success    1099780325392    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.224 | :03000001 | INFO  | BindUser fd:44 uid:1099780325392 serviceid:09000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.224 | :03000001 | DEBUG | SendTo 1099780325392 Message:S2CLogin size 13 
+{
+  "time": 1724175532223,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.224 | :03000001 | DEBUG | Recv 1099780325392 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.232 | :08000001 | INFO  | load user mail    1099780325392    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.232 | :03000001 | DEBUG | SendTo 1099780325392 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.232 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.233 | :03000001 | DEBUG | Recv 1099780325392 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.233 | :03000001 | DEBUG | SendTo 1099780325392 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.237 | :0A000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.237 | :02000002 | INFO  | login success    1099780325393    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.237 | :03000001 | INFO  | BindUser fd:46 uid:1099780325393 serviceid:0A000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.238 | :03000001 | DEBUG | SendTo 1099780325393 Message:S2CLogin size 13 
+{
+  "time": 1724175532223,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.238 | :03000001 | DEBUG | Recv 1099780325393 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.239 | :03000001 | INFO  | GAME SERVER: accept     48    127.0.0.1:4595    (game/service_gate.lua:28)
+2024-08-21 01:38:52.239 | :02000002 | INFO  | User Login fd:48 uid:1099780325394 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.239 | :0B000003 | INFO  | [WORKER 11] new service [user1099780325394]
+2024-08-21 01:38:52.250 | :08000001 | INFO  | load user mail    1099780325393    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.250 | :03000001 | DEBUG | SendTo 1099780325393 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.250 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.250 | :03000001 | DEBUG | Recv 1099780325393 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.250 | :03000001 | DEBUG | SendTo 1099780325393 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.253 | :0B000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.253 | :02000002 | INFO  | login success    1099780325394    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.253 | :03000001 | INFO  | BindUser fd:48 uid:1099780325394 serviceid:0B000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.254 | :03000001 | DEBUG | SendTo 1099780325394 Message:S2CLogin size 13 
+{
+  "time": 1724175532253,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.254 | :03000001 | INFO  | GAME SERVER: accept     49    127.0.0.1:4596    (game/service_gate.lua:28)
+2024-08-21 01:38:52.254 | :02000002 | INFO  | User Login fd:49 uid:1099780325395 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.254 | :03000001 | DEBUG | Recv 1099780325394 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.254 | :0C000003 | INFO  | [WORKER 12] new service [user1099780325395]
+2024-08-21 01:38:52.262 | :08000001 | INFO  | load user mail    1099780325394    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.262 | :03000001 | DEBUG | SendTo 1099780325394 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.262 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.262 | :03000001 | DEBUG | Recv 1099780325394 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.263 | :03000001 | DEBUG | SendTo 1099780325394 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.268 | :0C000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.268 | :02000002 | INFO  | login success    1099780325395    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.268 | :03000001 | INFO  | BindUser fd:49 uid:1099780325395 serviceid:0C000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.268 | :03000001 | DEBUG | SendTo 1099780325395 Message:S2CLogin size 13 
+{
+  "time": 1724175532253,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.268 | :03000001 | DEBUG | Recv 1099780325395 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.269 | :03000001 | INFO  | GAME SERVER: accept     52    127.0.0.1:4597    (game/service_gate.lua:28)
+2024-08-21 01:38:52.269 | :02000002 | INFO  | User Login fd:52 uid:1099780325396 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.269 | :0D000003 | INFO  | [WORKER 13] new service [user1099780325396]
+2024-08-21 01:38:52.277 | :08000001 | INFO  | load user mail    1099780325395    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.277 | :03000001 | DEBUG | SendTo 1099780325395 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.277 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.277 | :03000001 | DEBUG | Recv 1099780325395 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.277 | :03000001 | DEBUG | SendTo 1099780325395 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.283 | :0D000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.283 | :02000002 | INFO  | login success    1099780325396    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.283 | :03000001 | INFO  | BindUser fd:52 uid:1099780325396 serviceid:0D000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.283 | :03000001 | DEBUG | SendTo 1099780325396 Message:S2CLogin size 13 
+{
+  "time": 1724175532269,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.283 | :03000001 | DEBUG | Recv 1099780325396 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.285 | :03000001 | INFO  | GAME SERVER: accept     54    127.0.0.1:4598    (game/service_gate.lua:28)
+2024-08-21 01:38:52.285 | :02000002 | INFO  | User Login fd:54 uid:1099780325397 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.285 | :0E000003 | INFO  | [WORKER 14] new service [user1099780325397]
+2024-08-21 01:38:52.291 | :08000001 | INFO  | load user mail    1099780325396    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.291 | :03000001 | DEBUG | SendTo 1099780325396 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.291 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.291 | :03000001 | DEBUG | Recv 1099780325396 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.291 | :03000001 | DEBUG | SendTo 1099780325396 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.298 | :0E000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.298 | :02000002 | INFO  | login success    1099780325397    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.298 | :03000001 | INFO  | BindUser fd:54 uid:1099780325397 serviceid:0E000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.298 | :03000001 | DEBUG | SendTo 1099780325397 Message:S2CLogin size 13 
+{
+  "time": 1724175532284,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.298 | :03000001 | DEBUG | Recv 1099780325397 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.301 | :03000001 | INFO  | GAME SERVER: accept     55    127.0.0.1:4599    (game/service_gate.lua:28)
+2024-08-21 01:38:52.301 | :02000002 | INFO  | User Login fd:55 uid:1099780325398 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.301 | :0F000003 | INFO  | [WORKER 15] new service [user1099780325398]
+2024-08-21 01:38:52.306 | :08000001 | INFO  | load user mail    1099780325397    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.306 | :03000001 | DEBUG | SendTo 1099780325397 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.306 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.306 | :03000001 | DEBUG | Recv 1099780325397 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.306 | :03000001 | DEBUG | SendTo 1099780325397 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.316 | :0F000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.316 | :03000001 | INFO  | GAME SERVER: accept     58    127.0.0.1:4600    (game/service_gate.lua:28)
+2024-08-21 01:38:52.316 | :02000002 | INFO  | login success    1099780325398    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.316 | :03000001 | INFO  | BindUser fd:55 uid:1099780325398 serviceid:0F000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.316 | :03000001 | DEBUG | SendTo 1099780325398 Message:S2CLogin size 13 
+{
+  "time": 1724175532316,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.316 | :03000001 | DEBUG | Recv 1099780325398 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.316 | :02000002 | INFO  | User Login fd:58 uid:1099780325399 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.316 | :10000003 | INFO  | [WORKER 16] new service [user1099780325399]
+2024-08-21 01:38:52.324 | :08000001 | INFO  | load user mail    1099780325398    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.325 | :03000001 | DEBUG | SendTo 1099780325398 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.325 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.325 | :03000001 | DEBUG | Recv 1099780325398 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.325 | :03000001 | DEBUG | SendTo 1099780325398 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.331 | :10000003 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.331 | :02000002 | INFO  | login success    1099780325399    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.332 | :03000001 | INFO  | BindUser fd:58 uid:1099780325399 serviceid:10000003    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.332 | :03000001 | DEBUG | SendTo 1099780325399 Message:S2CLogin size 13 
+{
+  "time": 1724175532331,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.332 | :03000001 | INFO  | GAME SERVER: accept     59    127.0.0.1:4601    (game/service_gate.lua:28)
+2024-08-21 01:38:52.332 | :03000001 | DEBUG | Recv 1099780325399 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.332 | :02000002 | INFO  | User Login fd:59 uid:1099780325400 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.332 | :09000004 | INFO  | [WORKER 9] new service [user1099780325400]
+2024-08-21 01:38:52.340 | :08000001 | INFO  | load user mail    1099780325399    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.340 | :03000001 | DEBUG | SendTo 1099780325399 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.340 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.340 | :03000001 | DEBUG | Recv 1099780325399 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.341 | :03000001 | DEBUG | SendTo 1099780325399 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.347 | :03000001 | INFO  | GAME SERVER: accept     62    127.0.0.1:4602    (game/service_gate.lua:28)
+2024-08-21 01:38:52.348 | :02000002 | INFO  | User Login fd:62 uid:1099780325401 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.348 | :0A000004 | INFO  | [WORKER 10] new service [user1099780325401]
+2024-08-21 01:38:52.348 | :09000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.348 | :02000002 | INFO  | login success    1099780325400    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.348 | :03000001 | INFO  | BindUser fd:59 uid:1099780325400 serviceid:09000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.348 | :03000001 | DEBUG | SendTo 1099780325400 Message:S2CLogin size 13 
+{
+  "time": 1724175532347,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.348 | :03000001 | DEBUG | Recv 1099780325400 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.357 | :08000001 | INFO  | load user mail    1099780325400    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.357 | :03000001 | DEBUG | SendTo 1099780325400 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.357 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.357 | :03000001 | DEBUG | Recv 1099780325400 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.358 | :03000001 | DEBUG | SendTo 1099780325400 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.363 | :03000001 | INFO  | GAME SERVER: accept     63    127.0.0.1:4603    (game/service_gate.lua:28)
+2024-08-21 01:38:52.364 | :02000002 | INFO  | User Login fd:63 uid:1099780325402 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.364 | :0B000004 | INFO  | [WORKER 11] new service [user1099780325402]
+2024-08-21 01:38:52.364 | :0A000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.364 | :02000002 | INFO  | login success    1099780325401    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.364 | :03000001 | INFO  | BindUser fd:62 uid:1099780325401 serviceid:0A000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.364 | :03000001 | DEBUG | SendTo 1099780325401 Message:S2CLogin size 13 
+{
+  "time": 1724175532363,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.364 | :03000001 | DEBUG | Recv 1099780325401 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.372 | :08000001 | INFO  | load user mail    1099780325401    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.372 | :03000001 | DEBUG | SendTo 1099780325401 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.373 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.373 | :03000001 | DEBUG | Recv 1099780325401 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.373 | :03000001 | DEBUG | SendTo 1099780325401 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.379 | :03000001 | INFO  | GAME SERVER: accept     66    127.0.0.1:4604    (game/service_gate.lua:28)
+2024-08-21 01:38:52.379 | :02000002 | INFO  | User Login fd:66 uid:1099780325403 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.379 | :0C000004 | INFO  | [WORKER 12] new service [user1099780325403]
+2024-08-21 01:38:52.383 | :0B000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.383 | :02000002 | INFO  | login success    1099780325402    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.383 | :03000001 | INFO  | BindUser fd:63 uid:1099780325402 serviceid:0B000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.383 | :03000001 | DEBUG | SendTo 1099780325402 Message:S2CLogin size 13 
+{
+  "time": 1724175532378,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.383 | :03000001 | DEBUG | Recv 1099780325402 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.394 | :03000001 | INFO  | GAME SERVER: accept     68    127.0.0.1:4605    (game/service_gate.lua:28)
+2024-08-21 01:38:52.394 | :02000002 | INFO  | User Login fd:68 uid:1099780325404 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.394 | :0D000004 | INFO  | [WORKER 13] new service [user1099780325404]
+2024-08-21 01:38:52.398 | :08000001 | INFO  | load user mail    1099780325402    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.398 | :03000001 | DEBUG | SendTo 1099780325402 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.398 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.398 | :03000001 | DEBUG | Recv 1099780325402 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.398 | :03000001 | DEBUG | SendTo 1099780325402 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.401 | :0C000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.401 | :02000002 | INFO  | login success    1099780325403    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.401 | :03000001 | INFO  | BindUser fd:66 uid:1099780325403 serviceid:0C000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.401 | :03000001 | DEBUG | SendTo 1099780325403 Message:S2CLogin size 13 
+{
+  "time": 1724175532394,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.401 | :03000001 | DEBUG | Recv 1099780325403 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.410 | :0D000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.410 | :03000001 | INFO  | GAME SERVER: accept     70    127.0.0.1:4606    (game/service_gate.lua:28)
+2024-08-21 01:38:52.410 | :02000002 | INFO  | User Login fd:70 uid:1099780325405 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.410 | :02000002 | INFO  | login success    1099780325404    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.410 | :0E000004 | INFO  | [WORKER 14] new service [user1099780325405]
+2024-08-21 01:38:52.410 | :03000001 | INFO  | BindUser fd:68 uid:1099780325404 serviceid:0D000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.411 | :03000001 | DEBUG | SendTo 1099780325404 Message:S2CLogin size 13 
+{
+  "time": 1724175532410,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.411 | :03000001 | DEBUG | Recv 1099780325404 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.411 | :08000001 | INFO  | load user mail    1099780325403    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.411 | :03000001 | DEBUG | SendTo 1099780325403 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.411 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.412 | :03000001 | DEBUG | Recv 1099780325403 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.412 | :03000001 | DEBUG | SendTo 1099780325403 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.419 | :08000001 | INFO  | load user mail    1099780325404    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.419 | :03000001 | DEBUG | SendTo 1099780325404 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.419 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.420 | :03000001 | DEBUG | Recv 1099780325404 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.420 | :03000001 | DEBUG | SendTo 1099780325404 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.424 | :03000001 | INFO  | GAME SERVER: accept     72    127.0.0.1:4607    (game/service_gate.lua:28)
+2024-08-21 01:38:52.425 | :02000002 | INFO  | User Login fd:72 uid:1099780325406 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.425 | :0F000004 | INFO  | [WORKER 15] new service [user1099780325406]
+2024-08-21 01:38:52.428 | :0E000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.428 | :02000002 | INFO  | login success    1099780325405    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.428 | :03000001 | INFO  | BindUser fd:70 uid:1099780325405 serviceid:0E000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.428 | :03000001 | DEBUG | SendTo 1099780325405 Message:S2CLogin size 13 
+{
+  "time": 1724175532424,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.428 | :03000001 | DEBUG | Recv 1099780325405 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.436 | :08000001 | INFO  | load user mail    1099780325405    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.437 | :03000001 | DEBUG | SendTo 1099780325405 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.437 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.437 | :03000001 | DEBUG | Recv 1099780325405 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.437 | :03000001 | DEBUG | SendTo 1099780325405 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.440 | :03000001 | INFO  | GAME SERVER: accept     74    127.0.0.1:4608    (game/service_gate.lua:28)
+2024-08-21 01:38:52.440 | :02000002 | INFO  | User Login fd:74 uid:1099780325407 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.441 | :10000004 | INFO  | [WORKER 16] new service [user1099780325407]
+2024-08-21 01:38:52.441 | :0F000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.442 | :02000002 | INFO  | login success    1099780325406    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.442 | :03000001 | INFO  | BindUser fd:72 uid:1099780325406 serviceid:0F000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.442 | :03000001 | DEBUG | SendTo 1099780325406 Message:S2CLogin size 13 
+{
+  "time": 1724175532439,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.442 | :03000001 | DEBUG | Recv 1099780325406 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.451 | :08000001 | INFO  | load user mail    1099780325406    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.451 | :03000001 | DEBUG | SendTo 1099780325406 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.451 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.451 | :03000001 | DEBUG | Recv 1099780325406 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.451 | :03000001 | DEBUG | SendTo 1099780325406 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.455 | :03000001 | INFO  | GAME SERVER: accept     76    127.0.0.1:4609    (game/service_gate.lua:28)
+2024-08-21 01:38:52.456 | :02000002 | INFO  | User Login fd:76 uid:1099780325408 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.456 | :09000005 | INFO  | [WORKER 9] new service [user1099780325408]
+2024-08-21 01:38:52.457 | :10000004 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.457 | :02000002 | INFO  | login success    1099780325407    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.457 | :03000001 | INFO  | BindUser fd:74 uid:1099780325407 serviceid:10000004    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.457 | :03000001 | DEBUG | SendTo 1099780325407 Message:S2CLogin size 13 
+{
+  "time": 1724175532454,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.460 | :03000001 | DEBUG | Recv 1099780325407 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.468 | :08000001 | INFO  | load user mail    1099780325407    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.468 | :03000001 | DEBUG | SendTo 1099780325407 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.468 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.468 | :03000001 | DEBUG | Recv 1099780325407 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.468 | :03000001 | DEBUG | SendTo 1099780325407 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.470 | :03000001 | INFO  | GAME SERVER: accept     78    127.0.0.1:4610    (game/service_gate.lua:28)
+2024-08-21 01:38:52.470 | :02000002 | INFO  | User Login fd:78 uid:1099780325409 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.470 | :0A000005 | INFO  | [WORKER 10] new service [user1099780325409]
+2024-08-21 01:38:52.471 | :09000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.471 | :02000002 | INFO  | login success    1099780325408    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.471 | :03000001 | INFO  | BindUser fd:76 uid:1099780325408 serviceid:09000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.472 | :03000001 | DEBUG | SendTo 1099780325408 Message:S2CLogin size 13 
+{
+  "time": 1724175532469,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.472 | :03000001 | DEBUG | Recv 1099780325408 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.480 | :08000001 | INFO  | load user mail    1099780325408    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.480 | :03000001 | DEBUG | SendTo 1099780325408 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.480 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.480 | :03000001 | DEBUG | Recv 1099780325408 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.481 | :03000001 | DEBUG | SendTo 1099780325408 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.484 | :0A000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.484 | :02000002 | INFO  | login success    1099780325409    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.484 | :03000001 | INFO  | BindUser fd:78 uid:1099780325409 serviceid:0A000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.484 | :03000001 | DEBUG | SendTo 1099780325409 Message:S2CLogin size 13 
+{
+  "time": 1724175532469,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.484 | :03000001 | DEBUG | Recv 1099780325409 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.486 | :03000001 | INFO  | GAME SERVER: accept     80    127.0.0.1:4611    (game/service_gate.lua:28)
+2024-08-21 01:38:52.486 | :02000002 | INFO  | User Login fd:80 uid:1099780325410 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.486 | :0B000005 | INFO  | [WORKER 11] new service [user1099780325410]
+2024-08-21 01:38:52.492 | :08000001 | INFO  | load user mail    1099780325409    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.492 | :03000001 | DEBUG | SendTo 1099780325409 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.493 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.493 | :03000001 | DEBUG | Recv 1099780325409 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.493 | :03000001 | DEBUG | SendTo 1099780325409 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.500 | :0B000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.500 | :02000002 | INFO  | login success    1099780325410    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.500 | :03000001 | INFO  | BindUser fd:80 uid:1099780325410 serviceid:0B000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.500 | :03000001 | DEBUG | SendTo 1099780325410 Message:S2CLogin size 13 
+{
+  "time": 1724175532485,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.500 | :03000001 | DEBUG | Recv 1099780325410 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.501 | :03000001 | INFO  | GAME SERVER: accept     82    127.0.0.1:4612    (game/service_gate.lua:28)
+2024-08-21 01:38:52.501 | :02000002 | INFO  | User Login fd:82 uid:1099780325411 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.501 | :0C000005 | INFO  | [WORKER 12] new service [user1099780325411]
+2024-08-21 01:38:52.507 | :08000001 | INFO  | load user mail    1099780325410    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.507 | :03000001 | DEBUG | SendTo 1099780325410 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.508 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.508 | :03000001 | DEBUG | Recv 1099780325410 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.508 | :03000001 | DEBUG | SendTo 1099780325410 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.515 | :0C000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.515 | :02000002 | INFO  | login success    1099780325411    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.515 | :03000001 | INFO  | BindUser fd:82 uid:1099780325411 serviceid:0C000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.515 | :03000001 | DEBUG | SendTo 1099780325411 Message:S2CLogin size 13 
+{
+  "time": 1724175532500,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.515 | :03000001 | DEBUG | Recv 1099780325411 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.516 | :03000001 | INFO  | GAME SERVER: accept     84    127.0.0.1:4613    (game/service_gate.lua:28)
+2024-08-21 01:38:52.517 | :02000002 | INFO  | User Login fd:84 uid:1099780325412 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.517 | :0D000005 | INFO  | [WORKER 13] new service [user1099780325412]
+2024-08-21 01:38:52.523 | :08000001 | INFO  | load user mail    1099780325411    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.524 | :03000001 | DEBUG | SendTo 1099780325411 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.524 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.524 | :03000001 | DEBUG | Recv 1099780325411 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.524 | :03000001 | DEBUG | SendTo 1099780325411 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.532 | :0D000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.532 | :02000002 | INFO  | login success    1099780325412    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.533 | :03000001 | INFO  | BindUser fd:84 uid:1099780325412 serviceid:0D000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.533 | :03000001 | DEBUG | SendTo 1099780325412 Message:S2CLogin size 13 
+{
+  "time": 1724175532532,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.533 | :03000001 | INFO  | GAME SERVER: accept     86    127.0.0.1:4614    (game/service_gate.lua:28)
+2024-08-21 01:38:52.533 | :02000002 | INFO  | User Login fd:86 uid:1099780325413 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.533 | :03000001 | DEBUG | Recv 1099780325412 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.533 | :0E000005 | INFO  | [WORKER 14] new service [user1099780325413]
+2024-08-21 01:38:52.541 | :08000001 | INFO  | load user mail    1099780325412    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.541 | :03000001 | DEBUG | SendTo 1099780325412 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.542 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.542 | :03000001 | DEBUG | Recv 1099780325412 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.542 | :03000001 | DEBUG | SendTo 1099780325412 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.548 | :03000001 | INFO  | GAME SERVER: accept     88    127.0.0.1:4615    (game/service_gate.lua:28)
+2024-08-21 01:38:52.548 | :0E000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.548 | :02000002 | INFO  | login success    1099780325413    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.548 | :03000001 | INFO  | BindUser fd:86 uid:1099780325413 serviceid:0E000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.548 | :02000002 | INFO  | User Login fd:88 uid:1099780325414 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.548 | :0F000005 | INFO  | [WORKER 15] new service [user1099780325414]
+2024-08-21 01:38:52.548 | :03000001 | DEBUG | SendTo 1099780325413 Message:S2CLogin size 13 
+{
+  "time": 1724175532548,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.549 | :03000001 | DEBUG | Recv 1099780325413 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.557 | :08000001 | INFO  | load user mail    1099780325413    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.557 | :03000001 | DEBUG | SendTo 1099780325413 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.557 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.557 | :03000001 | DEBUG | Recv 1099780325413 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.557 | :03000001 | DEBUG | SendTo 1099780325413 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.564 | :03000001 | INFO  | GAME SERVER: accept     90    127.0.0.1:4616    (game/service_gate.lua:28)
+2024-08-21 01:38:52.564 | :02000002 | INFO  | User Login fd:90 uid:1099780325415 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.564 | :10000005 | INFO  | [WORKER 16] new service [user1099780325415]
+2024-08-21 01:38:52.567 | :0F000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.567 | :02000002 | INFO  | login success    1099780325414    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.567 | :03000001 | INFO  | BindUser fd:88 uid:1099780325414 serviceid:0F000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.567 | :03000001 | DEBUG | SendTo 1099780325414 Message:S2CLogin size 13 
+{
+  "time": 1724175532563,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.567 | :03000001 | DEBUG | Recv 1099780325414 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.575 | :08000001 | INFO  | load user mail    1099780325414    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.575 | :03000001 | DEBUG | SendTo 1099780325414 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.576 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.576 | :03000001 | DEBUG | Recv 1099780325414 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.576 | :03000001 | DEBUG | SendTo 1099780325414 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.577 | :10000005 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.578 | :02000002 | INFO  | login success    1099780325415    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.578 | :03000001 | INFO  | BindUser fd:90 uid:1099780325415 serviceid:10000005    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.578 | :03000001 | DEBUG | SendTo 1099780325415 Message:S2CLogin size 13 
+{
+  "time": 1724175532563,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.578 | :03000001 | DEBUG | Recv 1099780325415 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.580 | :03000001 | INFO  | GAME SERVER: accept     92    127.0.0.1:4617    (game/service_gate.lua:28)
+2024-08-21 01:38:52.580 | :02000002 | INFO  | User Login fd:92 uid:1099780325416 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.580 | :09000006 | INFO  | [WORKER 9] new service [user1099780325416]
+2024-08-21 01:38:52.586 | :08000001 | INFO  | load user mail    1099780325415    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.587 | :03000001 | DEBUG | SendTo 1099780325415 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.587 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.587 | :03000001 | DEBUG | Recv 1099780325415 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.587 | :03000001 | DEBUG | SendTo 1099780325415 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.593 | :09000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.593 | :02000002 | INFO  | login success    1099780325416    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.593 | :03000001 | INFO  | BindUser fd:92 uid:1099780325416 serviceid:09000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.593 | :03000001 | DEBUG | SendTo 1099780325416 Message:S2CLogin size 13 
+{
+  "time": 1724175532579,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.593 | :03000001 | DEBUG | Recv 1099780325416 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.595 | :03000001 | INFO  | GAME SERVER: accept     94    127.0.0.1:4618    (game/service_gate.lua:28)
+2024-08-21 01:38:52.595 | :02000002 | INFO  | User Login fd:94 uid:1099780325417 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.595 | :0A000006 | INFO  | [WORKER 10] new service [user1099780325417]
+2024-08-21 01:38:52.601 | :08000001 | INFO  | load user mail    1099780325416    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.601 | :03000001 | DEBUG | SendTo 1099780325416 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.601 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.601 | :03000001 | DEBUG | Recv 1099780325416 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.601 | :03000001 | DEBUG | SendTo 1099780325416 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.608 | :0A000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.608 | :02000002 | INFO  | login success    1099780325417    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.608 | :03000001 | INFO  | BindUser fd:94 uid:1099780325417 serviceid:0A000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.608 | :03000001 | DEBUG | SendTo 1099780325417 Message:S2CLogin size 13 
+{
+  "time": 1724175532595,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.608 | :03000001 | DEBUG | Recv 1099780325417 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.610 | :03000001 | INFO  | GAME SERVER: accept     96    127.0.0.1:4619    (game/service_gate.lua:28)
+2024-08-21 01:38:52.610 | :02000002 | INFO  | User Login fd:96 uid:1099780325418 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.610 | :0B000006 | INFO  | [WORKER 11] new service [user1099780325418]
+2024-08-21 01:38:52.617 | :08000001 | INFO  | load user mail    1099780325417    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.617 | :03000001 | DEBUG | SendTo 1099780325417 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.617 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.617 | :03000001 | DEBUG | Recv 1099780325417 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.617 | :03000001 | DEBUG | SendTo 1099780325417 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.622 | :0B000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.622 | :02000002 | INFO  | login success    1099780325418    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.622 | :03000001 | INFO  | BindUser fd:96 uid:1099780325418 serviceid:0B000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.622 | :03000001 | DEBUG | SendTo 1099780325418 Message:S2CLogin size 13 
+{
+  "time": 1724175532609,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.622 | :03000001 | DEBUG | Recv 1099780325418 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.626 | :03000001 | INFO  | GAME SERVER: accept     98    127.0.0.1:4620    (game/service_gate.lua:28)
+2024-08-21 01:38:52.626 | :02000002 | INFO  | User Login fd:98 uid:1099780325419 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.626 | :0C000006 | INFO  | [WORKER 12] new service [user1099780325419]
+2024-08-21 01:38:52.630 | :08000001 | INFO  | load user mail    1099780325418    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.630 | :03000001 | DEBUG | SendTo 1099780325418 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.630 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.630 | :03000001 | DEBUG | Recv 1099780325418 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.630 | :03000001 | DEBUG | SendTo 1099780325418 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.639 | :0C000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.639 | :02000002 | INFO  | login success    1099780325419    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.639 | :03000001 | INFO  | BindUser fd:98 uid:1099780325419 serviceid:0C000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.639 | :03000001 | DEBUG | SendTo 1099780325419 Message:S2CLogin size 13 
+{
+  "time": 1724175532625,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.640 | :03000001 | DEBUG | Recv 1099780325419 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.641 | :03000001 | INFO  | GAME SERVER: accept     99    127.0.0.1:4621    (game/service_gate.lua:28)
+2024-08-21 01:38:52.641 | :02000002 | INFO  | User Login fd:99 uid:1099780325420 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.642 | :0D000006 | INFO  | [WORKER 13] new service [user1099780325420]
+2024-08-21 01:38:52.648 | :08000001 | INFO  | load user mail    1099780325419    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.648 | :03000001 | DEBUG | SendTo 1099780325419 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.648 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.648 | :03000001 | DEBUG | Recv 1099780325419 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.649 | :03000001 | DEBUG | SendTo 1099780325419 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.656 | :0D000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.656 | :02000002 | INFO  | login success    1099780325420    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.656 | :03000001 | INFO  | BindUser fd:99 uid:1099780325420 serviceid:0D000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.656 | :03000001 | DEBUG | SendTo 1099780325420 Message:S2CLogin size 13 
+{
+  "time": 1724175532641,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.656 | :03000001 | DEBUG | Recv 1099780325420 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.657 | :03000001 | INFO  | GAME SERVER: accept     102    127.0.0.1:4622    (game/service_gate.lua:28)
+2024-08-21 01:38:52.657 | :02000002 | INFO  | User Login fd:102 uid:1099780325421 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.657 | :0E000006 | INFO  | [WORKER 14] new service [user1099780325421]
+2024-08-21 01:38:52.663 | :08000001 | INFO  | load user mail    1099780325420    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.664 | :03000001 | DEBUG | SendTo 1099780325420 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.664 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.664 | :03000001 | DEBUG | Recv 1099780325420 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.664 | :03000001 | DEBUG | SendTo 1099780325420 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.669 | :0E000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.669 | :02000002 | INFO  | login success    1099780325421    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.669 | :03000001 | INFO  | BindUser fd:102 uid:1099780325421 serviceid:0E000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.669 | :03000001 | DEBUG | SendTo 1099780325421 Message:S2CLogin size 13 
+{
+  "time": 1724175532657,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.669 | :03000001 | DEBUG | Recv 1099780325421 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.672 | :03000001 | INFO  | GAME SERVER: accept     104    127.0.0.1:4623    (game/service_gate.lua:28)
+2024-08-21 01:38:52.672 | :02000002 | INFO  | User Login fd:104 uid:1099780325422 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.672 | :0F000006 | INFO  | [WORKER 15] new service [user1099780325422]
+2024-08-21 01:38:52.678 | :08000001 | INFO  | load user mail    1099780325421    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.678 | :03000001 | DEBUG | SendTo 1099780325421 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.678 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.678 | :03000001 | DEBUG | Recv 1099780325421 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.678 | :03000001 | DEBUG | SendTo 1099780325421 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.687 | :0F000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.687 | :02000002 | INFO  | login success    1099780325422    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.687 | :03000001 | INFO  | BindUser fd:104 uid:1099780325422 serviceid:0F000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.687 | :03000001 | DEBUG | SendTo 1099780325422 Message:S2CLogin size 13 
+{
+  "time": 1724175532672,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.687 | :03000001 | DEBUG | Recv 1099780325422 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.688 | :03000001 | INFO  | GAME SERVER: accept     106    127.0.0.1:4624    (game/service_gate.lua:28)
+2024-08-21 01:38:52.688 | :02000002 | INFO  | User Login fd:106 uid:1099780325423 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.688 | :10000006 | INFO  | [WORKER 16] new service [user1099780325423]
+2024-08-21 01:38:52.696 | :08000001 | INFO  | load user mail    1099780325422    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.696 | :03000001 | DEBUG | SendTo 1099780325422 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.696 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.696 | :03000001 | DEBUG | Recv 1099780325422 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.696 | :03000001 | DEBUG | SendTo 1099780325422 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.700 | :10000006 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.700 | :02000002 | INFO  | login success    1099780325423    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.700 | :03000001 | INFO  | BindUser fd:106 uid:1099780325423 serviceid:10000006    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.700 | :03000001 | DEBUG | SendTo 1099780325423 Message:S2CLogin size 13 
+{
+  "time": 1724175532687,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.700 | :03000001 | DEBUG | Recv 1099780325423 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.703 | :03000001 | INFO  | GAME SERVER: accept     108    127.0.0.1:4625    (game/service_gate.lua:28)
+2024-08-21 01:38:52.703 | :02000002 | INFO  | User Login fd:108 uid:1099780325424 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.703 | :09000007 | INFO  | [WORKER 9] new service [user1099780325424]
+2024-08-21 01:38:52.708 | :08000001 | INFO  | load user mail    1099780325423    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.708 | :03000001 | DEBUG | SendTo 1099780325423 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.708 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.708 | :03000001 | DEBUG | Recv 1099780325423 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.708 | :03000001 | DEBUG | SendTo 1099780325423 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.716 | :09000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.716 | :02000002 | INFO  | login success    1099780325424    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.716 | :03000001 | INFO  | BindUser fd:108 uid:1099780325424 serviceid:09000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.716 | :03000001 | DEBUG | SendTo 1099780325424 Message:S2CLogin size 13 
+{
+  "time": 1724175532703,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.716 | :03000001 | DEBUG | Recv 1099780325424 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.718 | :03000001 | INFO  | GAME SERVER: accept     110    127.0.0.1:4626    (game/service_gate.lua:28)
+2024-08-21 01:38:52.718 | :02000002 | INFO  | User Login fd:110 uid:1099780325425 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.718 | :0A000007 | INFO  | [WORKER 10] new service [user1099780325425]
+2024-08-21 01:38:52.724 | :08000001 | INFO  | load user mail    1099780325424    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.724 | :03000001 | DEBUG | SendTo 1099780325424 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.724 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.724 | :03000001 | DEBUG | Recv 1099780325424 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.724 | :03000001 | DEBUG | SendTo 1099780325424 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.731 | :0A000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.731 | :02000002 | INFO  | login success    1099780325425    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.731 | :03000001 | INFO  | BindUser fd:110 uid:1099780325425 serviceid:0A000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.731 | :03000001 | DEBUG | SendTo 1099780325425 Message:S2CLogin size 13 
+{
+  "time": 1724175532718,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.731 | :03000001 | DEBUG | Recv 1099780325425 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.734 | :03000001 | INFO  | GAME SERVER: accept     112    127.0.0.1:4627    (game/service_gate.lua:28)
+2024-08-21 01:38:52.734 | :02000002 | INFO  | User Login fd:112 uid:1099780325426 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.734 | :0B000007 | INFO  | [WORKER 11] new service [user1099780325426]
+2024-08-21 01:38:52.740 | :08000001 | INFO  | load user mail    1099780325425    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.741 | :03000001 | DEBUG | SendTo 1099780325425 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.741 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.741 | :03000001 | DEBUG | Recv 1099780325425 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.741 | :03000001 | DEBUG | SendTo 1099780325425 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.747 | :0B000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.747 | :02000002 | INFO  | login success    1099780325426    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.747 | :03000001 | INFO  | BindUser fd:112 uid:1099780325426 serviceid:0B000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.748 | :03000001 | DEBUG | SendTo 1099780325426 Message:S2CLogin size 13 
+{
+  "time": 1724175532733,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.748 | :03000001 | DEBUG | Recv 1099780325426 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.749 | :03000001 | INFO  | GAME SERVER: accept     114    127.0.0.1:4628    (game/service_gate.lua:28)
+2024-08-21 01:38:52.749 | :02000002 | INFO  | User Login fd:114 uid:1099780325427 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.749 | :0C000007 | INFO  | [WORKER 12] new service [user1099780325427]
+2024-08-21 01:38:52.755 | :08000001 | INFO  | load user mail    1099780325426    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.755 | :03000001 | DEBUG | SendTo 1099780325426 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.756 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.756 | :03000001 | DEBUG | Recv 1099780325426 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.756 | :03000001 | DEBUG | SendTo 1099780325426 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.762 | :0C000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.762 | :02000002 | INFO  | login success    1099780325427    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.762 | :03000001 | INFO  | BindUser fd:114 uid:1099780325427 serviceid:0C000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.762 | :03000001 | DEBUG | SendTo 1099780325427 Message:S2CLogin size 13 
+{
+  "time": 1724175532748,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.762 | :03000001 | DEBUG | Recv 1099780325427 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.764 | :03000001 | INFO  | GAME SERVER: accept     115    127.0.0.1:4629    (game/service_gate.lua:28)
+2024-08-21 01:38:52.764 | :02000002 | INFO  | User Login fd:115 uid:1099780325428 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.764 | :0D000007 | INFO  | [WORKER 13] new service [user1099780325428]
+2024-08-21 01:38:52.769 | :08000001 | INFO  | load user mail    1099780325427    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.770 | :03000001 | DEBUG | SendTo 1099780325427 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.770 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.770 | :03000001 | DEBUG | Recv 1099780325427 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.770 | :03000001 | DEBUG | SendTo 1099780325427 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.777 | :0D000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.777 | :02000002 | INFO  | login success    1099780325428    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.777 | :03000001 | INFO  | BindUser fd:115 uid:1099780325428 serviceid:0D000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.777 | :03000001 | DEBUG | SendTo 1099780325428 Message:S2CLogin size 13 
+{
+  "time": 1724175532763,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.777 | :03000001 | DEBUG | Recv 1099780325428 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.779 | :03000001 | INFO  | GAME SERVER: accept     118    127.0.0.1:4630    (game/service_gate.lua:28)
+2024-08-21 01:38:52.779 | :02000002 | INFO  | User Login fd:118 uid:1099780325429 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.779 | :0E000007 | INFO  | [WORKER 14] new service [user1099780325429]
+2024-08-21 01:38:52.786 | :08000001 | INFO  | load user mail    1099780325428    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.786 | :03000001 | DEBUG | SendTo 1099780325428 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.786 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.786 | :03000001 | DEBUG | Recv 1099780325428 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.786 | :03000001 | DEBUG | SendTo 1099780325428 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.793 | :0E000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.793 | :02000002 | INFO  | login success    1099780325429    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.793 | :03000001 | INFO  | BindUser fd:118 uid:1099780325429 serviceid:0E000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.793 | :03000001 | DEBUG | SendTo 1099780325429 Message:S2CLogin size 13 
+{
+  "time": 1724175532778,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.793 | :03000001 | DEBUG | Recv 1099780325429 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.794 | :03000001 | INFO  | GAME SERVER: accept     120    127.0.0.1:4631    (game/service_gate.lua:28)
+2024-08-21 01:38:52.794 | :02000002 | INFO  | User Login fd:120 uid:1099780325430 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.794 | :0F000007 | INFO  | [WORKER 15] new service [user1099780325430]
+2024-08-21 01:38:52.802 | :08000001 | INFO  | load user mail    1099780325429    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.802 | :03000001 | DEBUG | SendTo 1099780325429 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.802 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.803 | :03000001 | DEBUG | Recv 1099780325429 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.803 | :03000001 | DEBUG | SendTo 1099780325429 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.808 | :0F000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.808 | :02000002 | INFO  | login success    1099780325430    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.808 | :03000001 | INFO  | BindUser fd:120 uid:1099780325430 serviceid:0F000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.808 | :03000001 | DEBUG | SendTo 1099780325430 Message:S2CLogin size 13 
+{
+  "time": 1724175532794,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.808 | :03000001 | DEBUG | Recv 1099780325430 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.810 | :03000001 | INFO  | GAME SERVER: accept     122    127.0.0.1:4632    (game/service_gate.lua:28)
+2024-08-21 01:38:52.810 | :02000002 | INFO  | User Login fd:122 uid:1099780325431 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.810 | :10000007 | INFO  | [WORKER 16] new service [user1099780325431]
+2024-08-21 01:38:52.817 | :08000001 | INFO  | load user mail    1099780325430    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.817 | :03000001 | DEBUG | SendTo 1099780325430 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.817 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.817 | :03000001 | DEBUG | Recv 1099780325430 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.817 | :03000001 | DEBUG | SendTo 1099780325430 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.823 | :10000007 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.823 | :02000002 | INFO  | login success    1099780325431    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.823 | :03000001 | INFO  | BindUser fd:122 uid:1099780325431 serviceid:10000007    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.824 | :03000001 | DEBUG | SendTo 1099780325431 Message:S2CLogin size 13 
+{
+  "time": 1724175532809,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.824 | :03000001 | DEBUG | Recv 1099780325431 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.825 | :03000001 | INFO  | GAME SERVER: accept     124    127.0.0.1:4633    (game/service_gate.lua:28)
+2024-08-21 01:38:52.825 | :02000002 | INFO  | User Login fd:124 uid:1099780325432 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.825 | :09000008 | INFO  | [WORKER 9] new service [user1099780325432]
+2024-08-21 01:38:52.832 | :08000001 | INFO  | load user mail    1099780325431    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.832 | :03000001 | DEBUG | SendTo 1099780325431 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.832 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.832 | :03000001 | DEBUG | Recv 1099780325431 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.833 | :03000001 | DEBUG | SendTo 1099780325431 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.839 | :09000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.839 | :02000002 | INFO  | login success    1099780325432    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.840 | :03000001 | INFO  | BindUser fd:124 uid:1099780325432 serviceid:09000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.840 | :03000001 | DEBUG | SendTo 1099780325432 Message:S2CLogin size 13 
+{
+  "time": 1724175532839,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.840 | :03000001 | INFO  | GAME SERVER: accept     125    127.0.0.1:4634    (game/service_gate.lua:28)
+2024-08-21 01:38:52.840 | :03000001 | DEBUG | Recv 1099780325432 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.840 | :02000002 | INFO  | User Login fd:125 uid:1099780325433 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.840 | :0A000008 | INFO  | [WORKER 10] new service [user1099780325433]
+2024-08-21 01:38:52.848 | :08000001 | INFO  | load user mail    1099780325432    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.848 | :03000001 | DEBUG | SendTo 1099780325432 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.848 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.849 | :03000001 | DEBUG | Recv 1099780325432 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.849 | :03000001 | DEBUG | SendTo 1099780325432 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.853 | :0A000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.854 | :02000002 | INFO  | login success    1099780325433    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.854 | :03000001 | INFO  | BindUser fd:125 uid:1099780325433 serviceid:0A000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.854 | :03000001 | DEBUG | SendTo 1099780325433 Message:S2CLogin size 13 
+{
+  "time": 1724175532839,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.854 | :03000001 | DEBUG | Recv 1099780325433 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.856 | :03000001 | INFO  | GAME SERVER: accept     128    127.0.0.1:4635    (game/service_gate.lua:28)
+2024-08-21 01:38:52.856 | :02000002 | INFO  | User Login fd:128 uid:1099780325434 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.856 | :0B000008 | INFO  | [WORKER 11] new service [user1099780325434]
+2024-08-21 01:38:52.863 | :08000001 | INFO  | load user mail    1099780325433    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.863 | :03000001 | DEBUG | SendTo 1099780325433 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.864 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.864 | :03000001 | DEBUG | Recv 1099780325433 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.864 | :03000001 | DEBUG | SendTo 1099780325433 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.870 | :0B000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.870 | :02000002 | INFO  | login success    1099780325434    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.870 | :03000001 | INFO  | BindUser fd:128 uid:1099780325434 serviceid:0B000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.870 | :03000001 | DEBUG | SendTo 1099780325434 Message:S2CLogin size 13 
+{
+  "time": 1724175532855,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.870 | :03000001 | DEBUG | Recv 1099780325434 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.872 | :03000001 | INFO  | GAME SERVER: accept     130    127.0.0.1:4636    (game/service_gate.lua:28)
+2024-08-21 01:38:52.872 | :02000002 | INFO  | User Login fd:130 uid:1099780325435 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.872 | :0C000008 | INFO  | [WORKER 12] new service [user1099780325435]
+2024-08-21 01:38:52.879 | :08000001 | INFO  | load user mail    1099780325434    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.879 | :03000001 | DEBUG | SendTo 1099780325434 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.879 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.879 | :03000001 | DEBUG | Recv 1099780325434 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.879 | :03000001 | DEBUG | SendTo 1099780325434 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.885 | :0C000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.885 | :02000002 | INFO  | login success    1099780325435    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.885 | :03000001 | INFO  | BindUser fd:130 uid:1099780325435 serviceid:0C000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.885 | :03000001 | DEBUG | SendTo 1099780325435 Message:S2CLogin size 13 
+{
+  "time": 1724175532871,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.885 | :03000001 | DEBUG | Recv 1099780325435 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.887 | :03000001 | INFO  | GAME SERVER: accept     132    127.0.0.1:4637    (game/service_gate.lua:28)
+2024-08-21 01:38:52.887 | :02000002 | INFO  | User Login fd:132 uid:1099780325436 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.887 | :0D000008 | INFO  | [WORKER 13] new service [user1099780325436]
+2024-08-21 01:38:52.894 | :08000001 | INFO  | load user mail    1099780325435    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.894 | :03000001 | DEBUG | SendTo 1099780325435 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.894 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.894 | :03000001 | DEBUG | Recv 1099780325435 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.895 | :03000001 | DEBUG | SendTo 1099780325435 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.903 | :03000001 | INFO  | GAME SERVER: accept     133    127.0.0.1:4638    (game/service_gate.lua:28)
+2024-08-21 01:38:52.903 | :02000002 | INFO  | User Login fd:133 uid:1099780325437 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.903 | :0E000008 | INFO  | [WORKER 14] new service [user1099780325437]
+2024-08-21 01:38:52.903 | :0D000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.904 | :02000002 | INFO  | login success    1099780325436    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.904 | :03000001 | INFO  | BindUser fd:132 uid:1099780325436 serviceid:0D000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.904 | :03000001 | DEBUG | SendTo 1099780325436 Message:S2CLogin size 13 
+{
+  "time": 1724175532902,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.904 | :03000001 | DEBUG | Recv 1099780325436 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.912 | :08000001 | INFO  | load user mail    1099780325436    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.912 | :03000001 | DEBUG | SendTo 1099780325436 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.912 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.912 | :03000001 | DEBUG | Recv 1099780325436 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.913 | :03000001 | DEBUG | SendTo 1099780325436 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.918 | :03000001 | INFO  | GAME SERVER: accept     136    127.0.0.1:4639    (game/service_gate.lua:28)
+2024-08-21 01:38:52.919 | :02000002 | INFO  | User Login fd:136 uid:1099780325438 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.919 | :0F000008 | INFO  | [WORKER 15] new service [user1099780325438]
+2024-08-21 01:38:52.921 | :0E000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.921 | :02000002 | INFO  | login success    1099780325437    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.921 | :03000001 | INFO  | BindUser fd:133 uid:1099780325437 serviceid:0E000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.922 | :03000001 | DEBUG | SendTo 1099780325437 Message:S2CLogin size 13 
+{
+  "time": 1724175532918,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.922 | :03000001 | DEBUG | Recv 1099780325437 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.930 | :08000001 | INFO  | load user mail    1099780325437    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.930 | :03000001 | DEBUG | SendTo 1099780325437 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.931 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.931 | :03000001 | DEBUG | Recv 1099780325437 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.931 | :03000001 | DEBUG | SendTo 1099780325437 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.932 | :0F000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.933 | :02000002 | INFO  | login success    1099780325438    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.933 | :03000001 | INFO  | BindUser fd:136 uid:1099780325438 serviceid:0F000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.933 | :03000001 | DEBUG | SendTo 1099780325438 Message:S2CLogin size 13 
+{
+  "time": 1724175532918,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.933 | :03000001 | DEBUG | Recv 1099780325438 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.933 | :03000001 | INFO  | GAME SERVER: accept     138    127.0.0.1:4640    (game/service_gate.lua:28)
+2024-08-21 01:38:52.934 | :02000002 | INFO  | User Login fd:138 uid:1099780325439 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.934 | :10000008 | INFO  | [WORKER 16] new service [user1099780325439]
+2024-08-21 01:38:52.943 | :08000001 | INFO  | load user mail    1099780325438    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.943 | :03000001 | DEBUG | SendTo 1099780325438 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.943 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.943 | :03000001 | DEBUG | Recv 1099780325438 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.944 | :03000001 | DEBUG | SendTo 1099780325438 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.949 | :03000001 | INFO  | GAME SERVER: accept     139    127.0.0.1:4641    (game/service_gate.lua:28)
+2024-08-21 01:38:52.950 | :02000002 | INFO  | User Login fd:139 uid:1099780325440 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.950 | :09000009 | INFO  | [WORKER 9] new service [user1099780325440]
+2024-08-21 01:38:52.950 | :10000008 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.950 | :02000002 | INFO  | login success    1099780325439    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.950 | :03000001 | INFO  | BindUser fd:138 uid:1099780325439 serviceid:10000008    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.950 | :03000001 | DEBUG | SendTo 1099780325439 Message:S2CLogin size 13 
+{
+  "time": 1724175532949,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.957 | :03000001 | DEBUG | Recv 1099780325439 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.965 | :03000001 | INFO  | GAME SERVER: accept     142    127.0.0.1:4642    (game/service_gate.lua:28)
+2024-08-21 01:38:52.965 | :02000002 | INFO  | User Login fd:142 uid:1099780325441 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.965 | :0A000009 | INFO  | [WORKER 10] new service [user1099780325441]
+2024-08-21 01:38:52.967 | :08000001 | INFO  | load user mail    1099780325439    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.967 | :03000001 | DEBUG | SendTo 1099780325439 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.967 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.967 | :03000001 | DEBUG | Recv 1099780325439 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.967 | :03000001 | DEBUG | SendTo 1099780325439 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.967 | :09000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.968 | :02000002 | INFO  | login success    1099780325440    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.968 | :03000001 | INFO  | BindUser fd:139 uid:1099780325440 serviceid:09000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.968 | :03000001 | DEBUG | SendTo 1099780325440 Message:S2CLogin size 13 
+{
+  "time": 1724175532964,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.968 | :03000001 | DEBUG | Recv 1099780325440 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.975 | :08000001 | INFO  | load user mail    1099780325440    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.976 | :03000001 | DEBUG | SendTo 1099780325440 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.976 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.976 | :03000001 | DEBUG | Recv 1099780325440 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.976 | :03000001 | DEBUG | SendTo 1099780325440 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.980 | :03000001 | INFO  | GAME SERVER: accept     144    127.0.0.1:4643    (game/service_gate.lua:28)
+2024-08-21 01:38:52.980 | :02000002 | INFO  | User Login fd:144 uid:1099780325442 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.980 | :0B000009 | INFO  | [WORKER 11] new service [user1099780325442]
+2024-08-21 01:38:52.985 | :0A000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:52.985 | :02000002 | INFO  | login success    1099780325441    (game/auth/Auth.lua:75)
+2024-08-21 01:38:52.985 | :03000001 | INFO  | BindUser fd:142 uid:1099780325441 serviceid:0A000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:52.985 | :03000001 | DEBUG | SendTo 1099780325441 Message:S2CLogin size 13 
+{
+  "time": 1724175532979,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.985 | :03000001 | DEBUG | Recv 1099780325441 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.995 | :08000001 | INFO  | load user mail    1099780325441    (game/mail/Mail.lua:52)
+2024-08-21 01:38:52.995 | :03000001 | DEBUG | SendTo 1099780325441 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.995 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:52.995 | :03000001 | DEBUG | Recv 1099780325441 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:52.995 | :03000001 | DEBUG | SendTo 1099780325441 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:52.996 | :03000001 | INFO  | GAME SERVER: accept     145    127.0.0.1:4644    (game/service_gate.lua:28)
+2024-08-21 01:38:52.996 | :02000002 | INFO  | User Login fd:145 uid:1099780325443 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:52.996 | :0C000009 | INFO  | [WORKER 12] new service [user1099780325443]
+2024-08-21 01:38:53.000 | :0B000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.000 | :02000002 | INFO  | login success    1099780325442    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.000 | :03000001 | INFO  | BindUser fd:144 uid:1099780325442 serviceid:0B000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.000 | :03000001 | DEBUG | SendTo 1099780325442 Message:S2CLogin size 13 
+{
+  "time": 1724175532995,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.000 | :03000001 | DEBUG | Recv 1099780325442 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.008 | :08000001 | INFO  | load user mail    1099780325442    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.008 | :03000001 | DEBUG | SendTo 1099780325442 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.008 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.008 | :03000001 | DEBUG | Recv 1099780325442 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.008 | :03000001 | DEBUG | SendTo 1099780325442 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.012 | :03000001 | INFO  | GAME SERVER: accept     148    127.0.0.1:4645    (game/service_gate.lua:28)
+2024-08-21 01:38:53.013 | :02000002 | INFO  | User Login fd:148 uid:1099780325444 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.013 | :0D000009 | INFO  | [WORKER 13] new service [user1099780325444]
+2024-08-21 01:38:53.018 | :0C000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.019 | :02000002 | INFO  | login success    1099780325443    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.019 | :03000001 | INFO  | BindUser fd:145 uid:1099780325443 serviceid:0C000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.019 | :03000001 | DEBUG | SendTo 1099780325443 Message:S2CLogin size 13 
+{
+  "time": 1724175533012,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.019 | :03000001 | DEBUG | Recv 1099780325443 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.027 | :03000001 | INFO  | GAME SERVER: accept     149    127.0.0.1:4646    (game/service_gate.lua:28)
+2024-08-21 01:38:53.027 | :02000002 | INFO  | User Login fd:149 uid:1099780325445 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.027 | :0E000009 | INFO  | [WORKER 14] new service [user1099780325445]
+2024-08-21 01:38:53.028 | :08000001 | INFO  | load user mail    1099780325443    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.028 | :03000001 | DEBUG | SendTo 1099780325443 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.028 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.028 | :03000001 | DEBUG | Recv 1099780325443 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.028 | :03000001 | DEBUG | SendTo 1099780325443 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.032 | :0D000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.032 | :02000002 | INFO  | login success    1099780325444    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.032 | :03000001 | INFO  | BindUser fd:148 uid:1099780325444 serviceid:0D000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.032 | :03000001 | DEBUG | SendTo 1099780325444 Message:S2CLogin size 13 
+{
+  "time": 1724175533026,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.032 | :03000001 | DEBUG | Recv 1099780325444 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.041 | :03000001 | INFO  | GAME SERVER: accept     152    127.0.0.1:4647    (game/service_gate.lua:28)
+2024-08-21 01:38:53.041 | :08000001 | INFO  | load user mail    1099780325444    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.041 | :03000001 | DEBUG | SendTo 1099780325444 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.041 | :02000002 | INFO  | User Login fd:152 uid:1099780325446 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.041 | :0F000009 | INFO  | [WORKER 15] new service [user1099780325446]
+2024-08-21 01:38:53.041 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.042 | :03000001 | DEBUG | Recv 1099780325444 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.042 | :03000001 | DEBUG | SendTo 1099780325444 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.044 | :0E000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.044 | :02000002 | INFO  | login success    1099780325445    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.044 | :03000001 | INFO  | BindUser fd:149 uid:1099780325445 serviceid:0E000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.044 | :03000001 | DEBUG | SendTo 1099780325445 Message:S2CLogin size 13 
+{
+  "time": 1724175533040,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.044 | :03000001 | DEBUG | Recv 1099780325445 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.054 | :08000001 | INFO  | load user mail    1099780325445    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.054 | :03000001 | DEBUG | SendTo 1099780325445 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.055 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.055 | :03000001 | DEBUG | Recv 1099780325445 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.055 | :03000001 | DEBUG | SendTo 1099780325445 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.057 | :03000001 | INFO  | GAME SERVER: accept     154    127.0.0.1:4648    (game/service_gate.lua:28)
+2024-08-21 01:38:53.057 | :02000002 | INFO  | User Login fd:154 uid:1099780325447 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.057 | :10000009 | INFO  | [WORKER 16] new service [user1099780325447]
+2024-08-21 01:38:53.063 | :0F000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.063 | :02000002 | INFO  | login success    1099780325446    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.063 | :03000001 | INFO  | BindUser fd:152 uid:1099780325446 serviceid:0F000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.064 | :03000001 | DEBUG | SendTo 1099780325446 Message:S2CLogin size 13 
+{
+  "time": 1724175533056,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.064 | :03000001 | DEBUG | Recv 1099780325446 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.072 | :03000001 | INFO  | GAME SERVER: accept     156    127.0.0.1:4649    (game/service_gate.lua:28)
+2024-08-21 01:38:53.072 | :08000001 | INFO  | load user mail    1099780325446    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.072 | :02000002 | INFO  | User Login fd:156 uid:1099780325448 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.072 | :03000001 | DEBUG | SendTo 1099780325446 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.072 | :0900000A | INFO  | [WORKER 9] new service [user1099780325448]
+2024-08-21 01:38:53.074 | :10000009 | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.075 | :02000002 | INFO  | login success    1099780325447    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.075 | :03000001 | INFO  | BindUser fd:154 uid:1099780325447 serviceid:10000009    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.075 | :03000001 | DEBUG | SendTo 1099780325447 Message:S2CLogin size 13 
+{
+  "time": 1724175533071,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.078 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.078 | :03000001 | DEBUG | Recv 1099780325446 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.078 | :03000001 | DEBUG | SendTo 1099780325446 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.078 | :03000001 | DEBUG | Recv 1099780325447 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.086 | :08000001 | INFO  | load user mail    1099780325447    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.087 | :03000001 | DEBUG | SendTo 1099780325447 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.087 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.087 | :03000001 | DEBUG | Recv 1099780325447 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.087 | :0900000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.087 | :02000002 | INFO  | login success    1099780325448    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.087 | :03000001 | INFO  | BindUser fd:156 uid:1099780325448 serviceid:0900000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.088 | :03000001 | DEBUG | SendTo 1099780325448 Message:S2CLogin size 13 
+{
+  "time": 1724175533071,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.088 | :03000001 | DEBUG | SendTo 1099780325447 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.088 | :03000001 | DEBUG | Recv 1099780325448 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.088 | :03000001 | INFO  | GAME SERVER: accept     158    127.0.0.1:4650    (game/service_gate.lua:28)
+2024-08-21 01:38:53.089 | :02000002 | INFO  | User Login fd:158 uid:1099780325449 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.089 | :0A00000A | INFO  | [WORKER 10] new service [user1099780325449]
+2024-08-21 01:38:53.103 | :03000001 | INFO  | GAME SERVER: accept     160    127.0.0.1:4651    (game/service_gate.lua:28)
+2024-08-21 01:38:53.103 | :02000002 | INFO  | User Login fd:160 uid:1099780325450 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.103 | :0B00000A | INFO  | [WORKER 11] new service [user1099780325450]
+2024-08-21 01:38:53.111 | :08000001 | INFO  | load user mail    1099780325448    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.111 | :03000001 | DEBUG | SendTo 1099780325448 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.111 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.111 | :03000001 | DEBUG | Recv 1099780325448 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.111 | :03000001 | DEBUG | SendTo 1099780325448 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.120 | :03000001 | INFO  | GAME SERVER: accept     162    127.0.0.1:4652    (game/service_gate.lua:28)
+2024-08-21 01:38:53.120 | :02000002 | INFO  | User Login fd:162 uid:1099780325451 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.121 | :0C00000A | INFO  | [WORKER 12] new service [user1099780325451]
+2024-08-21 01:38:53.137 | :03000001 | INFO  | GAME SERVER: accept     163    127.0.0.1:4653    (game/service_gate.lua:28)
+2024-08-21 01:38:53.138 | :02000002 | INFO  | User Login fd:163 uid:1099780325452 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.138 | :0D00000A | INFO  | [WORKER 13] new service [user1099780325452]
+2024-08-21 01:38:53.138 | :0B00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.138 | :02000002 | INFO  | login success    1099780325450    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.138 | :03000001 | INFO  | BindUser fd:160 uid:1099780325450 serviceid:0B00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.138 | :03000001 | DEBUG | SendTo 1099780325450 Message:S2CLogin size 13 
+{
+  "time": 1724175533136,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.139 | :03000001 | DEBUG | Recv 1099780325450 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.139 | :0A00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.139 | :02000002 | INFO  | login success    1099780325449    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.139 | :03000001 | INFO  | BindUser fd:158 uid:1099780325449 serviceid:0A00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.139 | :03000001 | DEBUG | SendTo 1099780325449 Message:S2CLogin size 13 
+{
+  "time": 1724175533136,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.139 | :03000001 | DEBUG | Recv 1099780325449 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.148 | :08000001 | INFO  | load user mail    1099780325450    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.148 | :03000001 | DEBUG | SendTo 1099780325450 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.148 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.148 | :03000001 | DEBUG | Recv 1099780325450 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.149 | :03000001 | DEBUG | SendTo 1099780325450 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.151 | :0C00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.151 | :03000001 | INFO  | GAME SERVER: accept     165    127.0.0.1:4654    (game/service_gate.lua:28)
+2024-08-21 01:38:53.151 | :02000002 | INFO  | login success    1099780325451    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.151 | :03000001 | INFO  | BindUser fd:162 uid:1099780325451 serviceid:0C00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.151 | :03000001 | DEBUG | SendTo 1099780325451 Message:S2CLogin size 13 
+{
+  "time": 1724175533150,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.151 | :02000002 | INFO  | User Login fd:165 uid:1099780325453 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.151 | :03000001 | DEBUG | Recv 1099780325451 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.152 | :0E00000A | INFO  | [WORKER 14] new service [user1099780325453]
+2024-08-21 01:38:53.157 | :08000001 | INFO  | load user mail    1099780325449    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.157 | :03000001 | DEBUG | SendTo 1099780325449 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.157 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.157 | :03000001 | DEBUG | Recv 1099780325449 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.158 | :03000001 | DEBUG | SendTo 1099780325449 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.158 | :0D00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.158 | :02000002 | INFO  | login success    1099780325452    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.158 | :03000001 | INFO  | BindUser fd:163 uid:1099780325452 serviceid:0D00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.159 | :03000001 | DEBUG | SendTo 1099780325452 Message:S2CLogin size 13 
+{
+  "time": 1724175533150,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.159 | :03000001 | DEBUG | Recv 1099780325452 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.165 | :03000001 | INFO  | GAME SERVER: accept     168    127.0.0.1:4655    (game/service_gate.lua:28)
+2024-08-21 01:38:53.166 | :02000002 | INFO  | User Login fd:168 uid:1099780325454 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.166 | :0F00000A | INFO  | [WORKER 15] new service [user1099780325454]
+2024-08-21 01:38:53.181 | :03000001 | INFO  | GAME SERVER: accept     169    127.0.0.1:4656    (game/service_gate.lua:28)
+2024-08-21 01:38:53.181 | :02000002 | INFO  | User Login fd:169 uid:1099780325455 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.181 | :1000000A | INFO  | [WORKER 16] new service [user1099780325455]
+2024-08-21 01:38:53.185 | :08000001 | INFO  | load user mail    1099780325451    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.185 | :03000001 | DEBUG | SendTo 1099780325451 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.186 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.186 | :03000001 | DEBUG | Recv 1099780325451 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.186 | :03000001 | DEBUG | SendTo 1099780325451 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.194 | :08000001 | INFO  | load user mail    1099780325452    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.194 | :03000001 | DEBUG | SendTo 1099780325452 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.195 | :0F00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.195 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.195 | :0E00000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | Recv 1099780325452 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.195 | :02000002 | INFO  | login success    1099780325454    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.195 | :02000002 | INFO  | login success    1099780325453    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.195 | :03000001 | INFO  | BindUser fd:168 uid:1099780325454 serviceid:0F00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | SendTo 1099780325454 Message:S2CLogin size 13 
+{
+  "time": 1724175533180,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.195 | :03000001 | INFO  | BindUser fd:165 uid:1099780325453 serviceid:0E00000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | SendTo 1099780325453 Message:S2CLogin size 13 
+{
+  "time": 1724175533180,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | SendTo 1099780325452 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | Recv 1099780325454 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.195 | :03000001 | DEBUG | Recv 1099780325453 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.196 | :03000001 | INFO  | GAME SERVER: accept     172    127.0.0.1:4657    (game/service_gate.lua:28)
+2024-08-21 01:38:53.196 | :02000002 | INFO  | User Login fd:172 uid:1099780325456 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.196 | :0900000B | INFO  | [WORKER 9] new service [user1099780325456]
+2024-08-21 01:38:53.198 | :1000000A | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.198 | :02000002 | INFO  | login success    1099780325455    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.198 | :03000001 | INFO  | BindUser fd:169 uid:1099780325455 serviceid:1000000A    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.198 | :03000001 | DEBUG | SendTo 1099780325455 Message:S2CLogin size 13 
+{
+  "time": 1724175533195,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.200 | :03000001 | DEBUG | Recv 1099780325455 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.203 | :08000001 | INFO  | load user mail    1099780325454    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.203 | :03000001 | DEBUG | SendTo 1099780325454 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.204 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.204 | :03000001 | DEBUG | Recv 1099780325454 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.204 | :03000001 | DEBUG | SendTo 1099780325454 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.209 | :0900000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.209 | :02000002 | INFO  | login success    1099780325456    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.209 | :03000001 | INFO  | BindUser fd:172 uid:1099780325456 serviceid:0900000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.209 | :03000001 | DEBUG | SendTo 1099780325456 Message:S2CLogin size 13 
+{
+  "time": 1724175533195,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.209 | :03000001 | DEBUG | Recv 1099780325456 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.211 | :08000001 | INFO  | load user mail    1099780325453    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.211 | :03000001 | INFO  | GAME SERVER: accept     173    127.0.0.1:4658    (game/service_gate.lua:28)
+2024-08-21 01:38:53.212 | :03000001 | DEBUG | SendTo 1099780325453 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.212 | :02000002 | INFO  | User Login fd:173 uid:1099780325457 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.212 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.212 | :0A00000B | INFO  | [WORKER 10] new service [user1099780325457]
+2024-08-21 01:38:53.212 | :03000001 | DEBUG | Recv 1099780325453 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.213 | :03000001 | DEBUG | SendTo 1099780325453 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.220 | :08000001 | INFO  | load user mail    1099780325455    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.220 | :03000001 | DEBUG | SendTo 1099780325455 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.220 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.220 | :03000001 | DEBUG | Recv 1099780325455 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.220 | :03000001 | DEBUG | SendTo 1099780325455 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.225 | :0A00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.225 | :02000002 | INFO  | login success    1099780325457    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.225 | :03000001 | INFO  | BindUser fd:173 uid:1099780325457 serviceid:0A00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.225 | :03000001 | DEBUG | SendTo 1099780325457 Message:S2CLogin size 13 
+{
+  "time": 1724175533211,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.225 | :03000001 | DEBUG | Recv 1099780325457 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.227 | :03000001 | INFO  | GAME SERVER: accept     176    127.0.0.1:4659    (game/service_gate.lua:28)
+2024-08-21 01:38:53.227 | :02000002 | INFO  | User Login fd:176 uid:1099780325458 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.227 | :0B00000B | INFO  | [WORKER 11] new service [user1099780325458]
+2024-08-21 01:38:53.228 | :08000001 | INFO  | load user mail    1099780325456    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.228 | :03000001 | DEBUG | SendTo 1099780325456 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.228 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.228 | :03000001 | DEBUG | Recv 1099780325456 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.228 | :03000001 | DEBUG | SendTo 1099780325456 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.236 | :08000001 | INFO  | load user mail    1099780325457    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.236 | :03000001 | DEBUG | SendTo 1099780325457 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.236 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.236 | :03000001 | DEBUG | Recv 1099780325457 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.236 | :03000001 | DEBUG | SendTo 1099780325457 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.239 | :0B00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.239 | :02000002 | INFO  | login success    1099780325458    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.239 | :03000001 | INFO  | BindUser fd:176 uid:1099780325458 serviceid:0B00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.239 | :03000001 | DEBUG | SendTo 1099780325458 Message:S2CLogin size 13 
+{
+  "time": 1724175533226,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.239 | :03000001 | DEBUG | Recv 1099780325458 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.242 | :03000001 | INFO  | GAME SERVER: accept     178    127.0.0.1:4660    (game/service_gate.lua:28)
+2024-08-21 01:38:53.242 | :02000002 | INFO  | User Login fd:178 uid:1099780325459 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.242 | :0C00000B | INFO  | [WORKER 12] new service [user1099780325459]
+2024-08-21 01:38:53.248 | :08000001 | INFO  | load user mail    1099780325458    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.248 | :03000001 | DEBUG | SendTo 1099780325458 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.248 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.248 | :03000001 | DEBUG | Recv 1099780325458 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.248 | :03000001 | DEBUG | SendTo 1099780325458 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.254 | :0C00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.254 | :02000002 | INFO  | login success    1099780325459    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.254 | :03000001 | INFO  | BindUser fd:178 uid:1099780325459 serviceid:0C00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.254 | :03000001 | DEBUG | SendTo 1099780325459 Message:S2CLogin size 13 
+{
+  "time": 1724175533242,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.255 | :03000001 | DEBUG | Recv 1099780325459 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.257 | :03000001 | INFO  | GAME SERVER: accept     180    127.0.0.1:4661    (game/service_gate.lua:28)
+2024-08-21 01:38:53.257 | :02000002 | INFO  | User Login fd:180 uid:1099780325460 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.257 | :0D00000B | INFO  | [WORKER 13] new service [user1099780325460]
+2024-08-21 01:38:53.263 | :08000001 | INFO  | load user mail    1099780325459    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.263 | :03000001 | DEBUG | SendTo 1099780325459 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.263 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.263 | :03000001 | DEBUG | Recv 1099780325459 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.263 | :03000001 | DEBUG | SendTo 1099780325459 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.269 | :0D00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.269 | :02000002 | INFO  | login success    1099780325460    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.269 | :03000001 | INFO  | BindUser fd:180 uid:1099780325460 serviceid:0D00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.270 | :03000001 | DEBUG | SendTo 1099780325460 Message:S2CLogin size 13 
+{
+  "time": 1724175533256,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.270 | :03000001 | DEBUG | Recv 1099780325460 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.272 | :03000001 | INFO  | GAME SERVER: accept     181    127.0.0.1:4662    (game/service_gate.lua:28)
+2024-08-21 01:38:53.272 | :02000002 | INFO  | User Login fd:181 uid:1099780325461 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.272 | :0E00000B | INFO  | [WORKER 14] new service [user1099780325461]
+2024-08-21 01:38:53.278 | :08000001 | INFO  | load user mail    1099780325460    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.278 | :03000001 | DEBUG | SendTo 1099780325460 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.278 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.278 | :03000001 | DEBUG | Recv 1099780325460 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.279 | :03000001 | DEBUG | SendTo 1099780325460 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.284 | :0E00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.284 | :02000002 | INFO  | login success    1099780325461    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.284 | :03000001 | INFO  | BindUser fd:181 uid:1099780325461 serviceid:0E00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.285 | :03000001 | DEBUG | SendTo 1099780325461 Message:S2CLogin size 13 
+{
+  "time": 1724175533271,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.285 | :03000001 | DEBUG | Recv 1099780325461 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.287 | :03000001 | INFO  | GAME SERVER: accept     184    127.0.0.1:4663    (game/service_gate.lua:28)
+2024-08-21 01:38:53.287 | :02000002 | INFO  | User Login fd:184 uid:1099780325462 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.287 | :0F00000B | INFO  | [WORKER 15] new service [user1099780325462]
+2024-08-21 01:38:53.293 | :08000001 | INFO  | load user mail    1099780325461    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.293 | :03000001 | DEBUG | SendTo 1099780325461 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.293 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.293 | :03000001 | DEBUG | Recv 1099780325461 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.294 | :03000001 | DEBUG | SendTo 1099780325461 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.302 | :03000001 | INFO  | GAME SERVER: accept     185    127.0.0.1:4664    (game/service_gate.lua:28)
+2024-08-21 01:38:53.302 | :02000002 | INFO  | User Login fd:185 uid:1099780325463 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.302 | :1000000B | INFO  | [WORKER 16] new service [user1099780325463]
+2024-08-21 01:38:53.318 | :03000001 | INFO  | GAME SERVER: accept     188    127.0.0.1:4665    (game/service_gate.lua:28)
+2024-08-21 01:38:53.318 | :02000002 | INFO  | User Login fd:188 uid:1099780325464 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.318 | :0900000C | INFO  | [WORKER 9] new service [user1099780325464]
+2024-08-21 01:38:53.320 | :0F00000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.320 | :02000002 | INFO  | login success    1099780325462    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.320 | :03000001 | INFO  | BindUser fd:184 uid:1099780325462 serviceid:0F00000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.320 | :03000001 | DEBUG | SendTo 1099780325462 Message:S2CLogin size 13 
+{
+  "time": 1724175533317,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.322 | :03000001 | DEBUG | Recv 1099780325462 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.333 | :08000001 | INFO  | load user mail    1099780325462    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.333 | :03000001 | DEBUG | SendTo 1099780325462 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.333 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.333 | :1000000B | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.333 | :03000001 | DEBUG | Recv 1099780325462 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.333 | :02000002 | INFO  | login success    1099780325463    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.333 | :03000001 | INFO  | BindUser fd:185 uid:1099780325463 serviceid:1000000B    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.333 | :03000001 | DEBUG | SendTo 1099780325463 Message:S2CLogin size 13 
+{
+  "time": 1724175533333,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.333 | :03000001 | DEBUG | SendTo 1099780325462 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.334 | :03000001 | INFO  | GAME SERVER: accept     189    127.0.0.1:4666    (game/service_gate.lua:28)
+2024-08-21 01:38:53.334 | :0900000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.334 | :03000001 | DEBUG | Recv 1099780325463 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.334 | :02000002 | INFO  | User Login fd:189 uid:1099780325465 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.334 | :02000002 | INFO  | login success    1099780325464    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.334 | :0A00000C | INFO  | [WORKER 10] new service [user1099780325465]
+2024-08-21 01:38:53.334 | :03000001 | INFO  | BindUser fd:188 uid:1099780325464 serviceid:0900000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.334 | :03000001 | DEBUG | SendTo 1099780325464 Message:S2CLogin size 13 
+{
+  "time": 1724175533333,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.335 | :03000001 | DEBUG | Recv 1099780325464 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.343 | :08000001 | INFO  | load user mail    1099780325463    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.343 | :03000001 | DEBUG | SendTo 1099780325463 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.343 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.343 | :03000001 | DEBUG | Recv 1099780325463 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.343 | :03000001 | DEBUG | SendTo 1099780325463 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.349 | :03000001 | INFO  | GAME SERVER: accept     191    127.0.0.1:4667    (game/service_gate.lua:28)
+2024-08-21 01:38:53.349 | :02000002 | INFO  | User Login fd:191 uid:1099780325466 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.349 | :0B00000C | INFO  | [WORKER 11] new service [user1099780325466]
+2024-08-21 01:38:53.349 | :0A00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.350 | :02000002 | INFO  | login success    1099780325465    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.350 | :03000001 | INFO  | BindUser fd:189 uid:1099780325465 serviceid:0A00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.350 | :03000001 | DEBUG | SendTo 1099780325465 Message:S2CLogin size 13 
+{
+  "time": 1724175533348,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.350 | :03000001 | DEBUG | Recv 1099780325465 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.351 | :08000001 | INFO  | load user mail    1099780325464    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.351 | :03000001 | DEBUG | SendTo 1099780325464 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.352 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.352 | :03000001 | DEBUG | Recv 1099780325464 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.352 | :03000001 | DEBUG | SendTo 1099780325464 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.359 | :08000001 | INFO  | load user mail    1099780325465    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.359 | :03000001 | DEBUG | SendTo 1099780325465 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.359 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.359 | :03000001 | DEBUG | Recv 1099780325465 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.359 | :03000001 | DEBUG | SendTo 1099780325465 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.363 | :0B00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.363 | :02000002 | INFO  | login success    1099780325466    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.363 | :03000001 | INFO  | BindUser fd:191 uid:1099780325466 serviceid:0B00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.363 | :03000001 | DEBUG | SendTo 1099780325466 Message:S2CLogin size 13 
+{
+  "time": 1724175533348,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.363 | :03000001 | DEBUG | Recv 1099780325466 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.365 | :03000001 | INFO  | GAME SERVER: accept     194    127.0.0.1:4668    (game/service_gate.lua:28)
+2024-08-21 01:38:53.365 | :02000002 | INFO  | User Login fd:194 uid:1099780325467 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.365 | :0C00000C | INFO  | [WORKER 12] new service [user1099780325467]
+2024-08-21 01:38:53.371 | :08000001 | INFO  | load user mail    1099780325466    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.371 | :03000001 | DEBUG | SendTo 1099780325466 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.371 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.371 | :03000001 | DEBUG | Recv 1099780325466 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.372 | :03000001 | DEBUG | SendTo 1099780325466 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.378 | :0C00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.378 | :02000002 | INFO  | login success    1099780325467    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.378 | :03000001 | INFO  | BindUser fd:194 uid:1099780325467 serviceid:0C00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.379 | :03000001 | DEBUG | SendTo 1099780325467 Message:S2CLogin size 13 
+{
+  "time": 1724175533364,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.379 | :03000001 | DEBUG | Recv 1099780325467 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.380 | :03000001 | INFO  | GAME SERVER: accept     196    127.0.0.1:4669    (game/service_gate.lua:28)
+2024-08-21 01:38:53.380 | :02000002 | INFO  | User Login fd:196 uid:1099780325468 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.380 | :0D00000C | INFO  | [WORKER 13] new service [user1099780325468]
+2024-08-21 01:38:53.387 | :08000001 | INFO  | load user mail    1099780325467    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.387 | :03000001 | DEBUG | SendTo 1099780325467 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.387 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.388 | :03000001 | DEBUG | Recv 1099780325467 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.388 | :03000001 | DEBUG | SendTo 1099780325467 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.393 | :0D00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.393 | :02000002 | INFO  | login success    1099780325468    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.393 | :03000001 | INFO  | BindUser fd:196 uid:1099780325468 serviceid:0D00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.393 | :03000001 | DEBUG | SendTo 1099780325468 Message:S2CLogin size 13 
+{
+  "time": 1724175533379,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.393 | :03000001 | DEBUG | Recv 1099780325468 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.396 | :03000001 | INFO  | GAME SERVER: accept     198    127.0.0.1:4670    (game/service_gate.lua:28)
+2024-08-21 01:38:53.396 | :02000002 | INFO  | User Login fd:198 uid:1099780325469 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.396 | :0E00000C | INFO  | [WORKER 14] new service [user1099780325469]
+2024-08-21 01:38:53.401 | :08000001 | INFO  | load user mail    1099780325468    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.402 | :03000001 | DEBUG | SendTo 1099780325468 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.402 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.402 | :03000001 | DEBUG | Recv 1099780325468 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.402 | :03000001 | DEBUG | SendTo 1099780325468 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.411 | :03000001 | INFO  | GAME SERVER: accept     200    127.0.0.1:4671    (game/service_gate.lua:28)
+2024-08-21 01:38:53.411 | :02000002 | INFO  | User Login fd:200 uid:1099780325470 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.411 | :0F00000C | INFO  | [WORKER 15] new service [user1099780325470]
+2024-08-21 01:38:53.426 | :03000001 | INFO  | GAME SERVER: accept     202    127.0.0.1:4672    (game/service_gate.lua:28)
+2024-08-21 01:38:53.426 | :02000002 | INFO  | User Login fd:202 uid:1099780325471 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.426 | :1000000C | INFO  | [WORKER 16] new service [user1099780325471]
+2024-08-21 01:38:53.428 | :0E00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.428 | :02000002 | INFO  | login success    1099780325469    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.428 | :03000001 | INFO  | BindUser fd:198 uid:1099780325469 serviceid:0E00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.428 | :03000001 | DEBUG | SendTo 1099780325469 Message:S2CLogin size 13 
+{
+  "time": 1724175533426,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.428 | :03000001 | DEBUG | Recv 1099780325469 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.436 | :08000001 | INFO  | load user mail    1099780325469    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.436 | :03000001 | DEBUG | SendTo 1099780325469 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.436 | :0F00000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.436 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.436 | :02000002 | INFO  | login success    1099780325470    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.436 | :03000001 | DEBUG | Recv 1099780325469 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.436 | :03000001 | INFO  | BindUser fd:200 uid:1099780325470 serviceid:0F00000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.437 | :03000001 | DEBUG | SendTo 1099780325470 Message:S2CLogin size 13 
+{
+  "time": 1724175533426,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.437 | :03000001 | DEBUG | SendTo 1099780325469 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.437 | :03000001 | DEBUG | Recv 1099780325470 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.439 | :1000000C | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.439 | :02000002 | INFO  | login success    1099780325471    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.439 | :03000001 | INFO  | BindUser fd:202 uid:1099780325471 serviceid:1000000C    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.439 | :03000001 | DEBUG | SendTo 1099780325471 Message:S2CLogin size 13 
+{
+  "time": 1724175533426,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.439 | :03000001 | DEBUG | Recv 1099780325471 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.442 | :03000001 | INFO  | GAME SERVER: accept     204    127.0.0.1:4673    (game/service_gate.lua:28)
+2024-08-21 01:38:53.442 | :02000002 | INFO  | User Login fd:204 uid:1099780325472 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.442 | :0900000D | INFO  | [WORKER 9] new service [user1099780325472]
+2024-08-21 01:38:53.444 | :08000001 | INFO  | load user mail    1099780325470    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.444 | :03000001 | DEBUG | SendTo 1099780325470 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.446 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.446 | :03000001 | DEBUG | Recv 1099780325470 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.446 | :03000001 | DEBUG | SendTo 1099780325470 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.452 | :08000001 | INFO  | load user mail    1099780325471    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.452 | :03000001 | DEBUG | SendTo 1099780325471 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.452 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.453 | :03000001 | DEBUG | Recv 1099780325471 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.453 | :03000001 | DEBUG | SendTo 1099780325471 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.454 | :0900000D | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.454 | :02000002 | INFO  | login success    1099780325472    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.455 | :03000001 | INFO  | BindUser fd:204 uid:1099780325472 serviceid:0900000D    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.455 | :03000001 | DEBUG | SendTo 1099780325472 Message:S2CLogin size 13 
+{
+  "time": 1724175533441,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.455 | :03000001 | DEBUG | Recv 1099780325472 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.457 | :03000001 | INFO  | GAME SERVER: accept     206    127.0.0.1:4674    (game/service_gate.lua:28)
+2024-08-21 01:38:53.458 | :02000002 | INFO  | User Login fd:206 uid:1099780325473 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.458 | :0A00000D | INFO  | [WORKER 10] new service [user1099780325473]
+2024-08-21 01:38:53.464 | :08000001 | INFO  | load user mail    1099780325472    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.464 | :03000001 | DEBUG | SendTo 1099780325472 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.465 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.465 | :03000001 | DEBUG | Recv 1099780325472 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.465 | :03000001 | DEBUG | SendTo 1099780325472 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.473 | :0A00000D | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.473 | :02000002 | INFO  | login success    1099780325473    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.473 | :03000001 | INFO  | BindUser fd:206 uid:1099780325473 serviceid:0A00000D    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.473 | :03000001 | DEBUG | SendTo 1099780325473 Message:S2CLogin size 13 
+{
+  "time": 1724175533473,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.473 | :03000001 | INFO  | GAME SERVER: accept     207    127.0.0.1:4675    (game/service_gate.lua:28)
+2024-08-21 01:38:53.473 | :03000001 | DEBUG | Recv 1099780325473 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.473 | :02000002 | INFO  | User Login fd:207 uid:1099780325474 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.473 | :0B00000D | INFO  | [WORKER 11] new service [user1099780325474]
+2024-08-21 01:38:53.490 | :03000001 | INFO  | GAME SERVER: accept     210    127.0.0.1:4676    (game/service_gate.lua:28)
+2024-08-21 01:38:53.490 | :02000002 | INFO  | User Login fd:210 uid:1099780325475 pulluser:false    (game/auth/Auth.lua:269)
+2024-08-21 01:38:53.490 | :0C00000D | INFO  | [WORKER 12] new service [user1099780325475]
+2024-08-21 01:38:53.503 | :08000001 | INFO  | load user mail    1099780325473    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.503 | :03000001 | DEBUG | SendTo 1099780325473 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.503 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.503 | :0B00000D | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.503 | :03000001 | DEBUG | Recv 1099780325473 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.503 | :02000002 | INFO  | login success    1099780325474    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.504 | :03000001 | INFO  | BindUser fd:207 uid:1099780325474 serviceid:0B00000D    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.504 | :03000001 | DEBUG | SendTo 1099780325474 Message:S2CLogin size 13 
+{
+  "time": 1724175533489,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.504 | :03000001 | DEBUG | SendTo 1099780325473 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.504 | :03000001 | DEBUG | Recv 1099780325474 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.511 | :0C00000D | INFO  | AddItem    10001    1    1    (game/user/Item.lua:87)
+2024-08-21 01:38:53.512 | :02000002 | INFO  | login success    1099780325475    (game/auth/Auth.lua:75)
+2024-08-21 01:38:53.512 | :03000001 | INFO  | BindUser fd:210 uid:1099780325475 serviceid:0C00000D    (game/gate/Gate.lua:75)
+2024-08-21 01:38:53.512 | :03000001 | DEBUG | SendTo 1099780325475 Message:S2CLogin size 13 
+{
+  "time": 1724175533505,
+  "ok": true,
+  "timezone": 8
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.512 | :03000001 | DEBUG | Recv 1099780325475 Message:C2SMailList size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.512 | :08000001 | INFO  | load user mail    1099780325474    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.512 | :03000001 | DEBUG | SendTo 1099780325474 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.512 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.512 | :03000001 | DEBUG | Recv 1099780325474 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.513 | :03000001 | DEBUG | SendTo 1099780325474 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.520 | :08000001 | INFO  | load user mail    1099780325475    (game/mail/Mail.lua:52)
+2024-08-21 01:38:53.520 | :03000001 | DEBUG | SendTo 1099780325475 Message:S2CMailList size 2 
+[]    (./common\protocol_pb.lua:108)
+2024-08-21 01:38:53.520 | :09000001 | INFO  | dump from: robot/robot.lua:149: in function <robot/robot.lua:139>
+{
+    mail_list = {
+    },
+}
+    (moon/lualib/base\util.lua:115)
+2024-08-21 01:38:53.520 | :03000001 | DEBUG | Recv 1099780325475 Message:C2SMatch size 2 
+[]    (./common\protocol_pb.lua:106)
+2024-08-21 01:38:53.521 | :03000001 | DEBUG | SendTo 1099780325475 Message:S2CMatch size 4 
+{
+  "res": true
+}    (./common\protocol_pb.lua:108)
+2024-08-21 01:42:06.194 | 55508     | WARN  | Received signal code 2 (server.cpp:57)
+2024-08-21 01:42:06.198 | :06000001 | INFO  | [WORKER 6] destroy service [node] 
+2024-08-21 01:42:06.198 | :05000001 | INFO  | [WORKER 5] destroy service [cluster] 
+2024-08-21 01:42:06.198 | :01000001 | INFO  | receive shutdown    (main_game.lua:191)
+2024-08-21 01:42:06.200 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.200 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.200 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.201 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.202 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.203 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.204 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.205 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.206 | :03000001 | INFO  | [WORKER 3] destroy service [gate] 
+2024-08-21 01:42:06.206 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.207 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.208 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.209 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.210 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.211 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :04000001 | INFO  | [WORKER 4] destroy service [center] 
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.212 | :09000001 | INFO  | socket error    EOF End of file.(2)    (robot/robot.lua:52)
+2024-08-21 01:42:06.228 | :02000002 | INFO  | begin: server exit save user    (game/auth/Auth.lua:141)
+2024-08-21 01:42:06.228 | :02000002 | INFO  | end: server exit save user    true    99    (game/auth/Auth.lua:167)
+2024-08-21 01:42:06.228 | :0900000B | INFO  | [WORKER 9] destroy service [user1099780325456] 
+2024-08-21 01:42:06.228 | :0A00000B | INFO  | [WORKER 10] destroy service [user1099780325457] 
+2024-08-21 01:42:06.229 | :0F00000A | INFO  | [WORKER 15] destroy service [user1099780325454] 
+2024-08-21 01:42:06.229 | :02000002 | INFO  | [WORKER 2] destroy service [auth] 
+2024-08-21 01:42:06.229 | :0900000C | INFO  | [WORKER 9] destroy service [user1099780325464] 
+2024-08-21 01:42:06.229 | :0A00000C | INFO  | [WORKER 10] destroy service [user1099780325465] 
+2024-08-21 01:42:06.229 | :0F00000B | INFO  | [WORKER 15] destroy service [user1099780325462] 
+2024-08-21 01:42:06.229 | :0A00000D | INFO  | [WORKER 10] destroy service [user1099780325473] 
+2024-08-21 01:42:06.229 | :0900000D | INFO  | [WORKER 9] destroy service [user1099780325472] 
+2024-08-21 01:42:06.229 | :0F00000C | INFO  | [WORKER 15] destroy service [user1099780325470] 
+2024-08-21 01:42:06.229 | :0A000001 | INFO  | [WORKER 10] destroy service [user1099780325377] 
+2024-08-21 01:42:06.229 | :09000002 | INFO  | [WORKER 9] destroy service [user1099780325384] 
+2024-08-21 01:42:06.229 | :0F000001 | INFO  | [WORKER 15] destroy service [user1099780325382] 
+2024-08-21 01:42:06.229 | :0A000002 | INFO  | [WORKER 10] destroy service [user1099780325385] 
+2024-08-21 01:42:06.229 | :09000003 | INFO  | [WORKER 9] destroy service [user1099780325392] 
+2024-08-21 01:42:06.229 | :0F000002 | INFO  | [WORKER 15] destroy service [user1099780325390] 
+2024-08-21 01:42:06.229 | :0A000003 | INFO  | [WORKER 10] destroy service [user1099780325393] 
+2024-08-21 01:42:06.229 | :09000004 | INFO  | [WORKER 9] destroy service [user1099780325400] 
+2024-08-21 01:42:06.229 | :0F000003 | INFO  | [WORKER 15] destroy service [user1099780325398] 
+2024-08-21 01:42:06.229 | :0A000004 | INFO  | [WORKER 10] destroy service [user1099780325401] 
+2024-08-21 01:42:06.229 | :09000005 | INFO  | [WORKER 9] destroy service [user1099780325408] 
+2024-08-21 01:42:06.229 | :0A000005 | INFO  | [WORKER 10] destroy service [user1099780325409] 
+2024-08-21 01:42:06.229 | :0F000004 | INFO  | [WORKER 15] destroy service [user1099780325406] 
+2024-08-21 01:42:06.229 | :09000006 | INFO  | [WORKER 9] destroy service [user1099780325416] 
+2024-08-21 01:42:06.229 | :0A000006 | INFO  | [WORKER 10] destroy service [user1099780325417] 
+2024-08-21 01:42:06.229 | :0F000005 | INFO  | [WORKER 15] destroy service [user1099780325414] 
+2024-08-21 01:42:06.229 | :09000007 | INFO  | [WORKER 9] destroy service [user1099780325424] 
+2024-08-21 01:42:06.229 | :0A000007 | INFO  | [WORKER 10] destroy service [user1099780325425] 
+2024-08-21 01:42:06.229 | :0F000006 | INFO  | [WORKER 15] destroy service [user1099780325422] 
+2024-08-21 01:42:06.229 | :0A000008 | INFO  | [WORKER 10] destroy service [user1099780325433] 
+2024-08-21 01:42:06.229 | :0F000007 | INFO  | [WORKER 15] destroy service [user1099780325430] 
+2024-08-21 01:42:06.229 | :0A000009 | INFO  | [WORKER 10] destroy service [user1099780325441] 
+2024-08-21 01:42:06.229 | :09000008 | INFO  | [WORKER 9] destroy service [user1099780325432] 
+2024-08-21 01:42:06.229 | :0F000008 | INFO  | [WORKER 15] destroy service [user1099780325438] 
+2024-08-21 01:42:06.229 | :0B00000B | INFO  | [WORKER 11] destroy service [user1099780325458] 
+2024-08-21 01:42:06.229 | :0A00000A | INFO  | [WORKER 10] destroy service [user1099780325449] 
+2024-08-21 01:42:06.229 | :0F000009 | INFO  | [WORKER 15] destroy service [user1099780325446] 
+2024-08-21 01:42:06.229 | :09000009 | INFO  | [WORKER 9] destroy service [user1099780325440] 
+2024-08-21 01:42:06.230 | :0B00000C | INFO  | [WORKER 11] destroy service [user1099780325466] 
+2024-08-21 01:42:06.230 | :0900000A | INFO  | [WORKER 9] destroy service [user1099780325448] 
+2024-08-21 01:42:06.230 | :0B00000D | INFO  | [WORKER 11] destroy service [user1099780325474] 
+2024-08-21 01:42:06.230 | :0B000001 | INFO  | [WORKER 11] destroy service [user1099780325378] 
+2024-08-21 01:42:06.230 | :0B000002 | INFO  | [WORKER 11] destroy service [user1099780325386] 
+2024-08-21 01:42:06.230 | :0B000003 | INFO  | [WORKER 11] destroy service [user1099780325394] 
+2024-08-21 01:42:06.230 | :0B000004 | INFO  | [WORKER 11] destroy service [user1099780325402] 
+2024-08-21 01:42:06.230 | :0B000005 | INFO  | [WORKER 11] destroy service [user1099780325410] 
+2024-08-21 01:42:06.230 | :0B000006 | INFO  | [WORKER 11] destroy service [user1099780325418] 
+2024-08-21 01:42:06.230 | :0B000007 | INFO  | [WORKER 11] destroy service [user1099780325426] 
+2024-08-21 01:42:06.230 | :0E00000B | INFO  | [WORKER 14] destroy service [user1099780325461] 
+2024-08-21 01:42:06.230 | :0B000008 | INFO  | [WORKER 11] destroy service [user1099780325434] 
+2024-08-21 01:42:06.230 | :0E00000C | INFO  | [WORKER 14] destroy service [user1099780325469] 
+2024-08-21 01:42:06.230 | :0B000009 | INFO  | [WORKER 11] destroy service [user1099780325442] 
+2024-08-21 01:42:06.230 | :0E000001 | INFO  | [WORKER 14] destroy service [user1099780325381] 
+2024-08-21 01:42:06.230 | :0B00000A | INFO  | [WORKER 11] destroy service [user1099780325450] 
+2024-08-21 01:42:06.230 | :0C00000B | INFO  | [WORKER 12] destroy service [user1099780325459] 
+2024-08-21 01:42:06.230 | :0E000002 | INFO  | [WORKER 14] destroy service [user1099780325389] 
+2024-08-21 01:42:06.231 | :0E000003 | INFO  | [WORKER 14] destroy service [user1099780325397] 
+2024-08-21 01:42:06.231 | :0C00000C | INFO  | [WORKER 12] destroy service [user1099780325467] 
+2024-08-21 01:42:06.231 | :0C00000D | INFO  | [WORKER 12] destroy service [user1099780325475] 
+2024-08-21 01:42:06.231 | :0E000004 | INFO  | [WORKER 14] destroy service [user1099780325405] 
+2024-08-21 01:42:06.231 | :0D00000B | INFO  | [WORKER 13] destroy service [user1099780325460] 
+2024-08-21 01:42:06.231 | :0E000005 | INFO  | [WORKER 14] destroy service [user1099780325413] 
+2024-08-21 01:42:06.231 | :0D00000C | INFO  | [WORKER 13] destroy service [user1099780325468] 
+2024-08-21 01:42:06.231 | :0E000006 | INFO  | [WORKER 14] destroy service [user1099780325421] 
+2024-08-21 01:42:06.231 | :0D000001 | INFO  | [WORKER 13] destroy service [user1099780325380] 
+2024-08-21 01:42:06.231 | :0D000002 | INFO  | [WORKER 13] destroy service [user1099780325388] 
+2024-08-21 01:42:06.231 | :0E000007 | INFO  | [WORKER 14] destroy service [user1099780325429] 
+2024-08-21 01:42:06.231 | :0D000003 | INFO  | [WORKER 13] destroy service [user1099780325396] 
+2024-08-21 01:42:06.231 | :0E000008 | INFO  | [WORKER 14] destroy service [user1099780325437] 
+2024-08-21 01:42:06.231 | :0D000004 | INFO  | [WORKER 13] destroy service [user1099780325404] 
+2024-08-21 01:42:06.231 | :0E000009 | INFO  | [WORKER 14] destroy service [user1099780325445] 
+2024-08-21 01:42:06.231 | :0E00000A | INFO  | [WORKER 14] destroy service [user1099780325453] 
+2024-08-21 01:42:06.231 | :0D000005 | INFO  | [WORKER 13] destroy service [user1099780325412] 
+2024-08-21 01:42:06.231 | :0D000006 | INFO  | [WORKER 13] destroy service [user1099780325420] 
+2024-08-21 01:42:06.231 | :0D000007 | INFO  | [WORKER 13] destroy service [user1099780325428] 
+2024-08-21 01:42:06.231 | :0C000001 | INFO  | [WORKER 12] destroy service [user1099780325379] 
+2024-08-21 01:42:06.232 | :0D000008 | INFO  | [WORKER 13] destroy service [user1099780325436] 
+2024-08-21 01:42:06.232 | :0C000002 | INFO  | [WORKER 12] destroy service [user1099780325387] 
+2024-08-21 01:42:06.232 | :0D000009 | INFO  | [WORKER 13] destroy service [user1099780325444] 
+2024-08-21 01:42:06.232 | :0C000003 | INFO  | [WORKER 12] destroy service [user1099780325395] 
+2024-08-21 01:42:06.232 | :0D00000A | INFO  | [WORKER 13] destroy service [user1099780325452] 
+2024-08-21 01:42:06.232 | :1000000A | INFO  | [WORKER 16] destroy service [user1099780325455] 
+2024-08-21 01:42:06.232 | :0C000004 | INFO  | [WORKER 12] destroy service [user1099780325403] 
+2024-08-21 01:42:06.232 | :1000000B | INFO  | [WORKER 16] destroy service [user1099780325463] 
+2024-08-21 01:42:06.232 | :0C000005 | INFO  | [WORKER 12] destroy service [user1099780325411] 
+2024-08-21 01:42:06.232 | :1000000C | INFO  | [WORKER 16] destroy service [user1099780325471] 
+2024-08-21 01:42:06.232 | :10000001 | INFO  | [WORKER 16] destroy service [user1099780325383] 
+2024-08-21 01:42:06.232 | :0C000006 | INFO  | [WORKER 12] destroy service [user1099780325419] 
+2024-08-21 01:42:06.232 | :10000002 | INFO  | [WORKER 16] destroy service [user1099780325391] 
+2024-08-21 01:42:06.232 | :0C000007 | INFO  | [WORKER 12] destroy service [user1099780325427] 
+2024-08-21 01:42:06.232 | :10000003 | INFO  | [WORKER 16] destroy service [user1099780325399] 
+2024-08-21 01:42:06.232 | :10000004 | INFO  | [WORKER 16] destroy service [user1099780325407] 
+2024-08-21 01:42:06.232 | :0C000008 | INFO  | [WORKER 12] destroy service [user1099780325435] 
+2024-08-21 01:42:06.232 | :10000005 | INFO  | [WORKER 16] destroy service [user1099780325415] 
+2024-08-21 01:42:06.232 | :10000006 | INFO  | [WORKER 16] destroy service [user1099780325423] 
+2024-08-21 01:42:06.232 | :0C000009 | INFO  | [WORKER 12] destroy service [user1099780325443] 
+2024-08-21 01:42:06.232 | :10000007 | INFO  | [WORKER 16] destroy service [user1099780325431] 
+2024-08-21 01:42:06.232 | :10000008 | INFO  | [WORKER 16] destroy service [user1099780325439] 
+2024-08-21 01:42:06.232 | :10000009 | INFO  | [WORKER 16] destroy service [user1099780325447] 
+2024-08-21 01:42:06.233 | :0C00000A | INFO  | [WORKER 12] destroy service [user1099780325451] 
+2024-08-21 01:42:06.242 | :08000001 | INFO  | [WORKER 8] destroy service [mail] 
+2024-08-21 01:42:07.233 | :01000001 | INFO  | 5......    (main_game.lua:200)
+2024-08-21 01:42:08.235 | :01000001 | INFO  | 4......    (main_game.lua:202)
+2024-08-21 01:42:09.247 | :01000001 | INFO  | 3......    (main_game.lua:204)
+2024-08-21 01:42:10.257 | :01000001 | INFO  | 2......    (main_game.lua:206)

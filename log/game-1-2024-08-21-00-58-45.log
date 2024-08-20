@@ -1,0 +1,99 @@
+2024-08-21 00:58:45.469 | 17600     | INFO  | INIT with 16 workers.
+2024-08-21 00:58:45.470 | 60600     | INFO  | WORKER-1 START
+2024-08-21 00:58:45.470 | 54080     | INFO  | WORKER-2 START
+2024-08-21 00:58:45.470 | 24792     | INFO  | WORKER-3 START
+2024-08-21 00:58:45.470 | 52116     | INFO  | WORKER-4 START
+2024-08-21 00:58:45.471 | 33604     | INFO  | WORKER-5 START
+2024-08-21 00:58:45.471 | 34260     | INFO  | WORKER-6 START
+2024-08-21 00:58:45.471 | 22696     | INFO  | WORKER-7 START
+2024-08-21 00:58:45.471 | 60996     | INFO  | WORKER-8 START
+2024-08-21 00:58:45.471 | 31088     | INFO  | WORKER-9 START
+2024-08-21 00:58:45.471 | 32112     | INFO  | WORKER-10 START
+2024-08-21 00:58:45.471 | 64160     | INFO  | WORKER-11 START
+2024-08-21 00:58:45.472 | 23196     | INFO  | WORKER-12 START
+2024-08-21 00:58:45.472 | 31304     | INFO  | WORKER-13 START
+2024-08-21 00:58:45.472 | 57408     | INFO  | WORKER-14 START
+2024-08-21 00:58:45.472 | 37016     | INFO  | WORKER-15 START
+2024-08-21 00:58:45.472 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-21 00:58:45.472 | 61648     | INFO  | WORKER-16 START
+2024-08-21 00:58:45.494 | :01000002 | INFO  | [WORKER 1] new service [db_openid]
+2024-08-21 00:58:45.507 | :01000003 | INFO  | [WORKER 1] new service [db_server]
+2024-08-21 00:58:45.518 | :01000004 | INFO  | [WORKER 1] new service [db_user]
+2024-08-21 00:58:45.541 | :02000001 | INFO  | [WORKER 2] new service [db_game]
+2024-08-21 00:58:45.552 | :02000002 | INFO  | [WORKER 2] new service [auth]
+2024-08-21 00:58:45.555 | :03000001 | INFO  | [WORKER 3] new service [gate]
+2024-08-21 00:58:45.558 | :04000001 | INFO  | [WORKER 4] new service [center]
+2024-08-21 00:58:45.560 | :05000001 | INFO  | [WORKER 5] new service [cluster]
+2024-08-21 00:58:45.563 | :06000001 | INFO  | [WORKER 6] new service [node]
+2024-08-21 00:58:45.566 | :07000001 | INFO  | [WORKER 7] new service [sharetable]
+2024-08-21 00:58:45.567 | :08000001 | INFO  | [WORKER 8] new service [mail]
+2024-08-21 00:58:45.570 | :09000001 | INFO  | [WORKER 9] new service [robot]
+2024-08-21 00:58:45.595 | :01000001 | ERROR | server will abort, init error
+    ./common\CreateTable.lua:5: severity: FATAL
+code: 28000
+message: no pg_hba.conf entry for host "220.198.245.73", user "postgres", database "postgres", no encryption
+stack traceback:
+	[C]: in function 'assert'
+	./common\CreateTable.lua:5: in upvalue 'check_err'
+	./common\CreateTable.lua:16: in function 'common.CreateTable'
+	main_game.lua:139: in function <main_game.lua:137>
+	[C]: in function 'xpcall'
+	main_game.lua:180: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (main_game.lua:182)
+2024-08-21 00:58:45.597 | 61648     | INFO  | WORKER-16 STOP
+2024-08-21 00:58:45.597 | 37016     | INFO  | WORKER-15 STOP
+2024-08-21 00:58:45.597 | 57408     | INFO  | WORKER-14 STOP
+2024-08-21 00:58:45.597 | 31304     | INFO  | WORKER-13 STOP
+2024-08-21 00:58:45.597 | 23196     | INFO  | WORKER-12 STOP
+2024-08-21 00:58:45.597 | 64160     | INFO  | WORKER-11 STOP
+2024-08-21 00:58:45.597 | 32112     | INFO  | WORKER-10 STOP
+2024-08-21 00:58:45.597 | :09000001 | INFO  | [WORKER 9] destroy service [robot] 
+2024-08-21 00:58:45.597 | 31088     | INFO  | WORKER-9 STOP
+2024-08-21 00:58:45.597 | :08000001 | INFO  | [WORKER 8] destroy service [mail] 
+2024-08-21 00:58:45.597 | 60996     | INFO  | WORKER-8 STOP
+2024-08-21 00:58:45.597 | :07000001 | INFO  | [WORKER 7] destroy service [sharetable] 
+2024-08-21 00:58:45.597 | 22696     | INFO  | WORKER-7 STOP
+2024-08-21 00:58:45.597 | :06000001 | INFO  | [WORKER 6] destroy service [node] 
+2024-08-21 00:58:45.597 | 34260     | INFO  | WORKER-6 STOP
+2024-08-21 00:58:45.598 | :05000001 | INFO  | [WORKER 5] destroy service [cluster] 
+2024-08-21 00:58:45.598 | 33604     | INFO  | WORKER-5 STOP
+2024-08-21 00:58:45.598 | :04000001 | INFO  | [WORKER 4] destroy service [center] 
+2024-08-21 00:58:45.598 | 52116     | INFO  | WORKER-4 STOP
+2024-08-21 00:58:45.598 | :03000001 | INFO  | [WORKER 3] destroy service [gate] 
+2024-08-21 00:58:45.598 | 24792     | INFO  | WORKER-3 STOP
+2024-08-21 00:58:45.598 | :02000001 | INFO  | [WORKER 2] destroy service [db_game] 
+2024-08-21 00:58:45.598 | :02000002 | INFO  | [WORKER 2] destroy service [auth] 
+2024-08-21 00:58:45.598 | 54080     | INFO  | WORKER-2 STOP
+2024-08-21 00:58:45.598 | :01000001 | INFO  | [WORKER 1] destroy service [bootstrap] 
+2024-08-21 00:58:45.598 | :01000002 | INFO  | [WORKER 1] destroy service [db_openid] 
+2024-08-21 00:58:45.598 | :01000003 | INFO  | [WORKER 1] destroy service [db_server] 
+2024-08-21 00:58:45.598 | :01000004 | INFO  | [WORKER 1] destroy service [db_user] 
+2024-08-21 00:58:45.598 | 60600     | INFO  | WORKER-1 STOP
+2024-08-21 00:58:45.599 | 17600     | INFO  | STOP
+2024-08-21 00:58:45.613 | 17600     | INFO  | mimalloc memory stats:
+heap stats:     peak       total       freed     current        unit       count   
+  reserved:     1.0 GiB     1.0 GiB   120.4 KiB     1.0 GiB                          
+ committed:    47.4 MiB   559.4 MiB   527.3 MiB    32.1 MiB                          
+     reset:     0      
+    purged:   512.3 MiB
+   touched:     1.0 MiB     1.0 MiB     3.3 MiB    -2.2 MiB                          ok
+  segments:    21          32          32           0                                ok
+-abandoned:    15          16          15           1                                not all freed
+   -cached:     0           0           0           0                                ok
+     pages:     0           0         226        -226                                ok
+-abandoned:    17          18          17           1                                not all freed
+ -extended:     0      
+ -noretire:     0      
+    arenas:     1      
+-crossover:     0      
+ -rollback:     0      
+     mmaps:     0      
+   commits:   239      
+    resets:     0      
+    purges:     3      
+   threads:    16          17          16           1                                not all freed
+  searches:     0.0 avg
+numa nodes:     1
+   elapsed:     0.149 s
+   process: user: 0.000 s, system: 0.015 s, faults: 3685, rss: 13.7 MiB, commit: 54.6 MiB

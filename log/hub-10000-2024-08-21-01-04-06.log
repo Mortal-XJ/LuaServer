@@ -1,0 +1,39 @@
+2024-08-21 01:04:06.769 | 10500     | INFO  | INIT with 8 workers.
+2024-08-21 01:04:06.769 | 35692     | INFO  | WORKER-1 START
+2024-08-21 01:04:06.769 | 12100     | INFO  | WORKER-2 START
+2024-08-21 01:04:06.770 | 14520     | INFO  | WORKER-3 START
+2024-08-21 01:04:06.770 | 15268     | INFO  | WORKER-4 START
+2024-08-21 01:04:06.770 | 30536     | INFO  | WORKER-5 START
+2024-08-21 01:04:06.770 | 60856     | INFO  | WORKER-6 START
+2024-08-21 01:04:06.770 | 62976     | INFO  | WORKER-7 START
+2024-08-21 01:04:06.770 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-21 01:04:06.770 | 10076     | INFO  | WORKER-8 START
+2024-08-21 01:04:06.784 | :01000002 | INFO  | [WORKER 1] new service [cluster]
+2024-08-21 01:04:06.787 | :02000001 | INFO  | [WORKER 2] new service [hub1]
+2024-08-21 01:04:06.795 | :03000001 | INFO  | [WORKER 3] new service [hub2]
+2024-08-21 01:04:06.795 | :02000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.802 | :04000001 | INFO  | [WORKER 4] new service [hub3]
+2024-08-21 01:04:06.802 | :03000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.809 | :05000001 | INFO  | [WORKER 5] new service [hub4]
+2024-08-21 01:04:06.809 | :04000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.817 | :06000001 | INFO  | [WORKER 6] new service [hub5]
+2024-08-21 01:04:06.817 | :05000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.824 | :07000001 | INFO  | [WORKER 7] new service [hub6]
+2024-08-21 01:04:06.824 | :06000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.832 | :08000001 | INFO  | [WORKER 8] new service [hub7]
+2024-08-21 01:04:06.832 | :07000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.839 | :02000002 | INFO  | [WORKER 2] new service [hub8]
+2024-08-21 01:04:06.839 | :08000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.845 | :02000002 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 01:04:06.846 | :01000001 | INFO  | Http server start    127.0.0.1    8003    (main_hub.lua:85)
+2024-08-21 01:09:47.289 | 10500     | WARN  | Received signal code 2 (server.cpp:57)
+2024-08-21 01:09:47.289 | :07000001 | INFO  | [WORKER 7] destroy service [hub6] 
+2024-08-21 01:09:47.289 | :06000001 | INFO  | [WORKER 6] destroy service [hub5] 
+2024-08-21 01:09:47.289 | :05000001 | INFO  | [WORKER 5] destroy service [hub4] 
+2024-08-21 01:09:47.289 | :08000001 | INFO  | [WORKER 8] destroy service [hub7] 
+2024-08-21 01:09:47.289 | :03000001 | INFO  | [WORKER 3] destroy service [hub2] 
+2024-08-21 01:09:47.289 | :01000001 | INFO  | [WORKER 1] destroy service [bootstrap] 
+2024-08-21 01:09:47.289 | :01000002 | INFO  | [WORKER 1] destroy service [cluster] 
+2024-08-21 01:09:47.289 | :02000001 | INFO  | [WORKER 2] destroy service [hub1] 
+2024-08-21 01:09:47.289 | :04000001 | INFO  | [WORKER 4] destroy service [hub3] 
+2024-08-21 01:09:47.289 | :02000002 | INFO  | [WORKER 2] destroy service [hub8] 

@@ -1,0 +1,989 @@
+2024-08-21 01:04:07.534 | 63532     | INFO  | INIT with 16 workers.
+2024-08-21 01:04:07.535 | 58220     | INFO  | WORKER-1 START
+2024-08-21 01:04:07.535 | 62688     | INFO  | WORKER-2 START
+2024-08-21 01:04:07.535 | 49604     | INFO  | WORKER-3 START
+2024-08-21 01:04:07.535 | 13336     | INFO  | WORKER-4 START
+2024-08-21 01:04:07.535 | 19596     | INFO  | WORKER-5 START
+2024-08-21 01:04:07.535 | 46936     | INFO  | WORKER-6 START
+2024-08-21 01:04:07.536 | 32120     | INFO  | WORKER-7 START
+2024-08-21 01:04:07.536 | 60788     | INFO  | WORKER-8 START
+2024-08-21 01:04:07.536 | 63976     | INFO  | WORKER-9 START
+2024-08-21 01:04:07.536 | 61496     | INFO  | WORKER-10 START
+2024-08-21 01:04:07.536 | 46144     | INFO  | WORKER-11 START
+2024-08-21 01:04:07.536 | 62572     | INFO  | WORKER-12 START
+2024-08-21 01:04:07.536 | 12056     | INFO  | WORKER-13 START
+2024-08-21 01:04:07.536 | 6108      | INFO  | WORKER-14 START
+2024-08-21 01:04:07.537 | 59480     | INFO  | WORKER-15 START
+2024-08-21 01:04:07.537 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-21 01:04:07.537 | 33080     | INFO  | WORKER-16 START
+2024-08-21 01:04:07.552 | :01000002 | INFO  | [WORKER 1] new service [db_openid]
+2024-08-21 01:04:07.563 | :01000003 | INFO  | [WORKER 1] new service [db_server]
+2024-08-21 01:04:07.575 | :01000004 | INFO  | [WORKER 1] new service [db_user]
+2024-08-21 01:04:07.586 | :02000001 | INFO  | [WORKER 2] new service [db_game]
+2024-08-21 01:04:07.599 | :02000002 | INFO  | [WORKER 2] new service [auth]
+2024-08-21 01:04:07.602 | :03000001 | INFO  | [WORKER 3] new service [gate]
+2024-08-21 01:04:07.605 | :04000001 | INFO  | [WORKER 4] new service [center]
+2024-08-21 01:04:07.609 | :05000001 | INFO  | [WORKER 5] new service [cluster]
+2024-08-21 01:04:07.611 | :06000001 | INFO  | [WORKER 6] new service [node]
+2024-08-21 01:04:07.736 | :07000001 | INFO  | [WORKER 7] new service [sharetable]
+2024-08-21 01:04:07.737 | :08000001 | INFO  | [WORKER 8] new service [mail]
+2024-08-21 01:04:07.740 | :09000001 | INFO  | [WORKER 9] new service [robot]
+2024-08-21 01:04:07.764 | :02000001 | ERROR | moon/lualib/moon\db\pg.lua:263: don't know how to auth, auth_type: 10.
+stack traceback:
+	[C]: in function 'error'
+	moon/lualib/moon\db\pg.lua:263: in upvalue 'auth'
+	moon/lualib/moon\db\pg.lua:325: in function 'moon.db.pg.connect'
+	moon/service/sqldriver.lua:34: in function <moon/service/sqldriver.lua:15>
+	[C]: in function 'xpcall'
+	moon/service/sqldriver.lua:84: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (moon/service/sqldriver.lua:87)
+2024-08-21 01:04:12.809 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.839 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.854 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.869 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.885 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.900 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.916 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.932 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.932 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.947 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.963 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.994 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:12.994 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.009 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.024 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.039 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.055 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.086 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.087 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.102 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.133 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.148 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.148 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.179 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.180 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.210 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.210 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.242 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.258 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.276 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.289 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.305 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.320 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.320 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.351 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.366 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.382 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.398 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.413 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.428 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.443 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.443 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.475 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.475 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.506 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.506 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.522 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.552 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.567 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.567 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.598 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.598 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.629 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.645 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.660 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.675 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.690 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.706 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.722 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.722 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.753 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.769 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.784 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.799 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.815 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.831 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.847 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.863 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.878 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.894 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.910 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.925 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.941 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.956 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.971 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.986 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:13.986 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.017 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.017 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.033 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.064 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.079 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.095 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.110 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.126 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.141 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.156 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.172 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.187 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.203 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.219 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.234 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.249 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.265 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.280 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.296 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.311 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.327 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:14.342 | :09000001 | INFO  | false    robot/robot.lua:43: connect 127.0.0.1:12345 由于目标计算机积极拒绝，无法连接。(10061)
+stack traceback:
+	[C]: in function 'assert'
+	robot/robot.lua:43: in field 'new'
+	robot/robot.lua:141: in function <robot/robot.lua:139>
+	[C]: in function 'xpcall'
+	robot/robot.lua:206: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>    (robot/robot.lua:206)
+2024-08-21 01:04:18.444 | 63532     | WARN  | Received signal code 0 (server.cpp:57)
+2024-08-21 01:04:18.444 | :05000001 | INFO  | [WORKER 5] destroy service [cluster] 
+2024-08-21 01:04:18.444 | :01000001 | INFO  | receive shutdown    (main_game.lua:191)
+2024-08-21 01:04:18.444 | :06000001 | INFO  | [WORKER 6] destroy service [node] 
+2024-08-21 01:04:18.459 | 33080     | INFO  | WORKER-16 STOP
+2024-08-21 01:04:18.459 | 59480     | INFO  | WORKER-15 STOP
+2024-08-21 01:04:18.459 | 6108      | INFO  | WORKER-14 STOP
+2024-08-21 01:04:18.459 | 12056     | INFO  | WORKER-13 STOP
+2024-08-21 01:04:18.459 | 62572     | INFO  | WORKER-12 STOP
+2024-08-21 01:04:18.459 | 46144     | INFO  | WORKER-11 STOP
+2024-08-21 01:04:18.459 | 61496     | INFO  | WORKER-10 STOP
+2024-08-21 01:04:18.460 | :09000001 | INFO  | [WORKER 9] destroy service [robot] 
+2024-08-21 01:04:18.460 | 63976     | INFO  | WORKER-9 STOP
+2024-08-21 01:04:18.460 | :08000001 | INFO  | [WORKER 8] destroy service [mail] 
+2024-08-21 01:04:18.460 | 60788     | INFO  | WORKER-8 STOP
+2024-08-21 01:04:18.460 | :07000001 | INFO  | [WORKER 7] destroy service [sharetable] 
+2024-08-21 01:04:18.460 | 32120     | INFO  | WORKER-7 STOP
+2024-08-21 01:04:18.460 | 46936     | INFO  | WORKER-6 STOP
+2024-08-21 01:04:18.460 | 19596     | INFO  | WORKER-5 STOP
+2024-08-21 01:04:18.460 | :04000001 | INFO  | [WORKER 4] destroy service [center] 
+2024-08-21 01:04:18.460 | 13336     | INFO  | WORKER-4 STOP
+2024-08-21 01:04:18.460 | :03000001 | INFO  | [WORKER 3] destroy service [gate] 
+2024-08-21 01:04:18.460 | 49604     | INFO  | WORKER-3 STOP
+2024-08-21 01:04:18.460 | :02000001 | INFO  | [WORKER 2] destroy service [db_game] 
+2024-08-21 01:04:18.460 | :02000002 | INFO  | [WORKER 2] destroy service [auth] 
+2024-08-21 01:04:18.460 | 62688     | INFO  | WORKER-2 STOP
+2024-08-21 01:04:18.460 | :01000001 | INFO  | [WORKER 1] destroy service [bootstrap] 
+2024-08-21 01:04:18.461 | :01000002 | INFO  | [WORKER 1] destroy service [db_openid] 
+2024-08-21 01:04:18.461 | :01000003 | INFO  | [WORKER 1] destroy service [db_server] 
+2024-08-21 01:04:18.461 | :01000004 | INFO  | [WORKER 1] destroy service [db_user] 
+2024-08-21 01:04:18.461 | 58220     | INFO  | WORKER-1 STOP
+2024-08-21 01:04:18.462 | 63532     | INFO  | STOP
+2024-08-21 01:04:18.475 | 63532     | INFO  | mimalloc memory stats:
+heap stats:     peak       total       freed     current        unit       count   
+  reserved:     1.0 GiB     1.0 GiB   120.4 KiB     1.0 GiB                          
+ committed:    48.3 MiB   560.7 MiB   527.1 MiB    33.5 MiB                          
+     reset:     0      
+    purged:   513.2 MiB
+   touched:     1.0 MiB     1.0 MiB     4.4 MiB    -3.3 MiB                          ok
+  segments:    19          32          32           0                                ok
+-abandoned:    16          16          15           1                                not all freed
+   -cached:     0           0           0           0                                ok
+     pages:     0           0         249        -249                                ok
+-abandoned:    17          17          16           1                                not all freed
+ -extended:     0      
+ -noretire:     0      
+    arenas:     1      
+-crossover:     0      
+ -rollback:     0      
+     mmaps:     0      
+   commits:   260      
+    resets:     0      
+    purges:    16      
+   threads:    16          17          16           1                                not all freed
+  searches:     0.0 avg
+numa nodes:     1
+   elapsed:    10.944 s
+   process: user: 0.000 s, system: 0.031 s, faults: 3954, rss: 14.6 MiB, commit: 55.7 MiB

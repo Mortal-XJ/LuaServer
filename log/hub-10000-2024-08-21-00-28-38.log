@@ -1,0 +1,46 @@
+2024-08-21 00:28:38.012 | 28636     | INFO  | INIT with 8 workers.
+2024-08-21 00:28:38.013 | 57200     | INFO  | WORKER-1 START
+2024-08-21 00:28:38.013 | 9392      | INFO  | WORKER-3 START
+2024-08-21 00:28:38.013 | 31088     | INFO  | WORKER-4 START
+2024-08-21 00:28:38.013 | 46404     | INFO  | WORKER-5 START
+2024-08-21 00:28:38.013 | 14200     | INFO  | WORKER-2 START
+2024-08-21 00:28:38.013 | 24328     | INFO  | WORKER-6 START
+2024-08-21 00:28:38.013 | 17600     | INFO  | WORKER-7 START
+2024-08-21 00:28:38.014 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-21 00:28:38.014 | 36344     | INFO  | WORKER-8 START
+2024-08-21 00:28:38.048 | :01000002 | INFO  | [WORKER 1] new service [cluster]
+2024-08-21 00:28:38.051 | :02000001 | INFO  | [WORKER 2] new service [hub1]
+2024-08-21 00:28:38.061 | :03000001 | INFO  | [WORKER 3] new service [hub2]
+2024-08-21 00:28:38.061 | :02000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.070 | :04000001 | INFO  | [WORKER 4] new service [hub3]
+2024-08-21 00:28:38.070 | :03000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.078 | :05000001 | INFO  | [WORKER 5] new service [hub4]
+2024-08-21 00:28:38.078 | :04000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.086 | :06000001 | INFO  | [WORKER 6] new service [hub5]
+2024-08-21 00:28:38.086 | :05000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.093 | :07000001 | INFO  | [WORKER 7] new service [hub6]
+2024-08-21 00:28:38.094 | :06000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.102 | :08000001 | INFO  | [WORKER 8] new service [hub7]
+2024-08-21 00:28:38.102 | :07000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.109 | :02000002 | INFO  | [WORKER 2] new service [hub8]
+2024-08-21 00:28:38.109 | :08000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.117 | :02000002 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-21 00:28:38.117 | 57200     | ERROR | 127.0.0.1:8003 bind: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。(10048) (socket_server.cpp:74)
+2024-08-21 00:28:38.117 | :01000001 | ERROR | dispatch bootstrap error:
+moon/lualib/moon.lua:111: moon/lualib/moon.lua:111: main_hub.lua:84: assertion failed!
+stack traceback:
+	[C]: in function 'assert'
+	main_hub.lua:84: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>
+stack traceback:
+	[C]: in function 'error'
+	moon/lualib/moon.lua:111: in upvalue 'coresume'
+	moon/lualib/moon.lua:262: in function 'moon.core.async'
+	main_hub.lua:79: in local 'fn'
+	moon/lualib/moon.lua:228: in upvalue 'invoke'
+	moon/lualib/moon.lua:235: in function <moon/lualib/moon.lua:233>
+stack traceback:
+	[C]: in function 'error'
+	moon/lualib/moon.lua:111: in upvalue 'coresume'
+	moon/lualib/moon.lua:384: in function <moon/lualib/moon.lua:372>

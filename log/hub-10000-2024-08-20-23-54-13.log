@@ -1,0 +1,28 @@
+2024-08-20 23:54:13.532 | 36164     | INFO  | INIT with 8 workers.
+2024-08-20 23:54:13.533 | 21804     | INFO  | WORKER-1 START
+2024-08-20 23:54:13.533 | 34016     | INFO  | WORKER-2 START
+2024-08-20 23:54:13.533 | 40052     | INFO  | WORKER-3 START
+2024-08-20 23:54:13.533 | 38972     | INFO  | WORKER-4 START
+2024-08-20 23:54:13.533 | 37424     | INFO  | WORKER-5 START
+2024-08-20 23:54:13.533 | 55636     | INFO  | WORKER-6 START
+2024-08-20 23:54:13.533 | 13848     | INFO  | WORKER-7 START
+2024-08-20 23:54:13.534 | :01000001 | INFO  | [WORKER 1] new service [bootstrap]
+2024-08-20 23:54:13.534 | 60892     | INFO  | WORKER-8 START
+2024-08-20 23:54:13.544 | :01000002 | INFO  | [WORKER 1] new service [cluster]
+2024-08-20 23:54:13.547 | :02000001 | INFO  | [WORKER 2] new service [hub1]
+2024-08-20 23:54:13.557 | :03000001 | INFO  | [WORKER 3] new service [hub2]
+2024-08-20 23:54:13.557 | :02000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.564 | :04000001 | INFO  | [WORKER 4] new service [hub3]
+2024-08-20 23:54:13.564 | :03000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.571 | :05000001 | INFO  | [WORKER 5] new service [hub4]
+2024-08-20 23:54:13.571 | :04000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.579 | :06000001 | INFO  | [WORKER 6] new service [hub5]
+2024-08-20 23:54:13.579 | :05000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.586 | :07000001 | INFO  | [WORKER 7] new service [hub6]
+2024-08-20 23:54:13.586 | :06000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.593 | :08000001 | INFO  | [WORKER 8] new service [hub7]
+2024-08-20 23:54:13.593 | :07000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.600 | :02000002 | INFO  | [WORKER 2] new service [hub8]
+2024-08-20 23:54:13.600 | :08000001 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.607 | :02000002 | INFO  | loadnode    (game/service_hub.lua:315)
+2024-08-20 23:54:13.607 | :01000001 | INFO  | Http server start    127.0.0.1    8003    (main_hub.lua:85)
